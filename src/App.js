@@ -2,7 +2,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Course from './Course';
 import Login from './Login';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
             <Home />
           </Route>
           <Route path="/#">
+            <Redirect to="/home" />
             <Home />
           </Route>
           <Route path="/course">
