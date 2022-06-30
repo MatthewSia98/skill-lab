@@ -5,16 +5,16 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="left-links-div">
-                <a id="skill-lab" href="/">SkillLab</a>
+                <Link id="skill-lab" to="/">SkillLab</Link>
                 <CategoryDropdown />
             </div>
 
             <Searchbar />
 
             <div className="right-links-div">
-                <a className="right-links" href="/course">Online Degrees</a>
+                <Link className="right-links" to="/course">Online Degrees</Link>
                 <a className="right-links" href="https://www.gofundme.com/en-ca" target="_">Donate</a>
-                <a className="login" href="/login"><button className="light-button">Log In</button></a>
+                <Link className="login" to="/login"><button className="light-button">Log In</button></Link>
             </div>
         </nav> 
     );
