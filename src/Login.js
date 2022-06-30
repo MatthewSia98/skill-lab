@@ -7,6 +7,11 @@ function Login() {
         }
     }
 
+    function login() {
+        const login = document.querySelector("#login-btn");
+        login.textContent = "Logged In";
+    }
+
     return (
         <div className="login-page">
             <h1>Log in to your SkillLab account</h1>
@@ -20,7 +25,7 @@ function Login() {
             </div>
             <input className="login-input" type="text" placeholder="Email" onKeyPress={getCredential}></input>  
             <input className="login-input" type="text" placeholder="Password" onKeyPress={getCredential}></input>
-            <Link to="/home"><button id="login-btn" className="light-button">Log In</button></Link>
+            <Link to="/home"><button id="login-btn" className="light-button" onclick={login}>Log In</button></Link>
             <a className="forgot-password" href="#">Forgot your password?</a>
             <p className="no-account">Don't have an account? <a href="#">Sign up</a></p>
         </div>
