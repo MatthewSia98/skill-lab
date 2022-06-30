@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="left-links-div">
-                <Link id="skill-lab" to="/#">SkillLab</Link>
+                <Link id="skill-lab" to="/">SkillLab</Link>
                 <CategoryDropdown />
             </div>
 
