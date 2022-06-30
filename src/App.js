@@ -10,10 +10,15 @@ function App() {
       <div className="App">
         <Navbar />
         <Switch>
-          <Route path="/"><Home /></Route>
-          <Route path="/home"><Home /></Route>
-          <Route path="/course"><Course /></Route>
-          <Route path="/login"><Login /></Route>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/course">
+            <Course />
+            </Route>
+          <Route path="/login">
+            <Login />
+            </Route>
         </Switch>
       </div>
     </Router>
