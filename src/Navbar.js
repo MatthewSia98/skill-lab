@@ -1,5 +1,6 @@
 import CategoryDropdown from './CategoryDropdown';
 import Searchbar from './Searchbar'
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
