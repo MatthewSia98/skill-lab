@@ -2,7 +2,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Course from './Course';
 import Login from './Login';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
