@@ -11,6 +11,9 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/">
+            <Redirect to="/home" />
+          </Route>
+          <Route path="/home">
             <Home />
           </Route>
           <Route path="/course">
