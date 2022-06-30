@@ -10,10 +10,10 @@ function App() {
       <div className="App">
         <Navbar />
         <Switch>
-          <Route path="/skill-lab" component={Home} />
-          <Route path="/skill-lab/#/home" component={Home} />
-          <Route path="/skill-lab/#/course" component={Course} />
-          <Route path="/skill-lab/#/login" component={Login} />
+          <Route path="/"><Home /></Route>
+          <Route path="/home"><Home /></Route>
+          <Route path="/course"><Course /></Route>
+          <Route path="/login"><Login /></Route>
         </Switch>
       </div>
     </Router>
