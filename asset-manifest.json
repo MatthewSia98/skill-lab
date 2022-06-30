@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/skill-lab/static/css/main.9b2ca810.css",
+    "main.js": "/skill-lab/static/js/main.0aa12df4.js",
+    "static/media/html-for-beginners.png": "/skill-lab/static/media/html-for-beginners.66ab08a4a5d7e768faa2.png",
+    "static/media/making-your-first-web-app.png": "/skill-lab/static/media/making-your-first-web-app.6a5eb016b8f2d61b6cd2.png",
+    "static/media/home.jpg": "/skill-lab/static/media/home.64224790aea4f6d1c869.jpg",
+    "static/media/5stars.PNG": "/skill-lab/static/media/5stars.f6adb3c7fd143b00d0ba.PNG",
+    "static/media/person.png": "/skill-lab/static/media/person.31f5f43ed127d28d99a7.png",
+    "static/media/google.png": "/skill-lab/static/media/google.0590aaf0fe36e23dcc8c.png",
+    "static/media/learn-bootstrap.png": "/skill-lab/static/media/learn-bootstrap.6e97d94e2920ec598abd.png",
+    "static/media/what-is-web-development.png": "/skill-lab/static/media/what-is-web-development.0658bfe07119d861673d.png",
+    "static/media/down-arrow.png": "/skill-lab/static/media/down-arrow.9edfd30de83ab8492410.png",
+    "static/media/right-arrow.jpg": "/skill-lab/static/media/right-arrow.2f15aa84c41972b3f985.jpg",
+    "static/media/left-arrow.jpg": "/skill-lab/static/media/left-arrow.e5d33293b93325afde95.jpg",
+    "static/media/15-bar.PNG": "/skill-lab/static/media/15-bar.d240b503f61ea0d2d0f2.PNG",
+    "static/media/75-bar.PNG": "/skill-lab/static/media/75-bar.932df8a29e06aa437796.PNG",
+    "static/media/1-bar.PNG": "/skill-lab/static/media/1-bar.8c6e5bc86bf25ecdeb17.PNG",
+    "static/media/2-bar.PNG": "/skill-lab/static/media/2-bar.5de407007e5c45189036.PNG",
+    "static/media/7-bar.PNG": "/skill-lab/static/media/7-bar.3249d394a2f954348f45.PNG",
+    "index.html": "/skill-lab/index.html",
+    "main.9b2ca810.css.map": "/skill-lab/static/css/main.9b2ca810.css.map",
+    "main.0aa12df4.js.map": "/skill-lab/static/js/main.0aa12df4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b2ca810.css",
+    "static/js/main.0aa12df4.js"
+  ]
+}
