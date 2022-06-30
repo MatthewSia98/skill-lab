@@ -10,7 +10,7 @@ function App() {
       <div className="App">
         <Navbar />
         <Switch>
-          <Route path="/">
+          <Route path="/home">
             <Home />
           </Route>
           <Route path="/course">
