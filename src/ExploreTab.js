@@ -11,13 +11,13 @@ function ExploreTab() {
 
     return (
         <div className="tabs">
-            <a href="#"><button className="unselected-tab" onClick={ selectTab }>Web Development</button></a>
-            <a href="#"><button className="unselected-tab" onClick={ selectTab }>Data Science</button></a>
-            <a href="#"><button className="unselected-tab" onClick={ selectTab }>Photography</button></a>
-            <a href="#"><button className="unselected-tab" onClick={ selectTab }>Business</button></a>
-            <a href="#"><button className="unselected-tab" onClick={ selectTab }>Drawing</button></a>
-            <a href="#"><button className="unselected-tab" onClick={ selectTab }>Music Production</button></a>
-            <a href="#"><button className="unselected-tab" onClick={ selectTab }>Painting</button></a>
+            <button className="unselected-tab" onClick={ selectTab }>Web Development</button>
+            <button className="unselected-tab" onClick={ selectTab }>Data Science</button>
+            <button className="unselected-tab" onClick={ selectTab }>Photography</button>
+            <button className="unselected-tab" onClick={ selectTab }>Business</button>
+            <button className="unselected-tab" onClick={ selectTab }>Drawing</button>
+            <button className="unselected-tab" onClick={ selectTab }>Music Production</button>
+            <button className="unselected-tab" onClick={ selectTab }>Painting</button>
         </div>
     );
 }
