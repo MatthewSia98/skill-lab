@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/skill-lab/static/css/main.c40e16a3.css",
-    "main.js": "/skill-lab/static/js/main.026c77e7.js",
+    "main.js": "/skill-lab/static/js/main.f8a2a7dc.js",
     "static/media/html-for-beginners.png": "/skill-lab/static/media/html-for-beginners.66ab08a4a5d7e768faa2.png",
     "static/media/making-your-first-web-app.png": "/skill-lab/static/media/making-your-first-web-app.6a5eb016b8f2d61b6cd2.png",
     "static/media/home.jpg": "/skill-lab/static/media/home.64224790aea4f6d1c869.jpg",
@@ -20,10 +20,10 @@
     "static/media/7-bar.PNG": "/skill-lab/static/media/7-bar.3249d394a2f954348f45.PNG",
     "index.html": "/skill-lab/index.html",
     "main.c40e16a3.css.map": "/skill-lab/static/css/main.c40e16a3.css.map",
-    "main.026c77e7.js.map": "/skill-lab/static/js/main.026c77e7.js.map"
+    "main.f8a2a7dc.js.map": "/skill-lab/static/js/main.f8a2a7dc.js.map"
   },
   "entrypoints": [
     "static/css/main.c40e16a3.css",
-    "static/js/main.026c77e7.js"
+    "static/js/main.f8a2a7dc.js"
   ]
 }
