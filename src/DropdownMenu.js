@@ -1,11 +1,6 @@
 import DropdownOption from "./DropdownOption";
 
 function DropdownMenu() {
-    function hideDropdown() {
-        const dropdown = document.querySelector(".dropdown-content");
-        dropdown.style.display = "none";
-    }
-
     return (
         <div className="dropdown-content">
             <div className="dropdown-col">

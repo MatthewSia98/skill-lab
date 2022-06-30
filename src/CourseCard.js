@@ -1,10 +1,11 @@
-import CourseStars from './CourseStars'
+import CourseStars from './CourseStars';
+import { Link } from 'react-router-dom';
 
 function CourseCard(props) {
     return (
         <div className="course-card">
             <div className="course-banner">
-                <a href="/course"><img className="course-preview" src={ require(`${props.path}`) } /></a>
+                <Link to="/course"><img className="course-preview" src={ require(`${props.path}`) } /></Link>
             </div>
             <div className="course-info">
                 <h4>{ props.name }</h4>

@@ -2,7 +2,6 @@ import search_icon from './icons/search.jpg'
 
 function Searchbar() {
     function searchCourse(event) {
-        console.log(event.key);
         if (event.key === "Enter" || event.type === "click") {
             const search = document.querySelector(".search-input");
             search.value = "";

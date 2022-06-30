@@ -1,15 +1,17 @@
+import { Link } from 'react-router-dom';
+
 function DropdownOption(props) {
     if (props.arrow) {
         return (
             <div className="dropdown-option">
-                <a className="dropdown-name" href="/course">{props.name}</a>
+                <Link className="dropdown-name" to="/course">{props.name}</Link>
                 <img className="dropdown-arrow" src={require("./icons/right-arrow.jpg")} />
             </div>
         );
     } else {
         return (
             <div className="dropdown-option">
-                <a className="dropdown-name" href="/course">{props.name}</a>
+                <Link className="dropdown-name" to="/course">{props.name}</Link>
             </div>
         );
     }

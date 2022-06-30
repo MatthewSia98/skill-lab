@@ -5,8 +5,8 @@ function CategoryDropdown() {
     return (
         <div className="dropdown">
             <div className="categories">
-                <a href="#">Categories</a>
-                <a href="#"><img id="down-arrow" className="navbar-icon" src={ down_arrow } alt="down arrow" href="#"/></a>
+                <p>Categories</p>
+                <img id="down-arrow" className="navbar-icon" src={ down_arrow } alt="down arrow" />
             </div>
             <DropdownMenu />
         </div>

@@ -1,5 +1,5 @@
 import home from './images/home.jpg';
-import DropdownMenu from './DropdownMenu';
+import { Link } from 'react-router-dom'
 
 function Banner() {
     return (
@@ -10,8 +10,8 @@ function Banner() {
           <div className="banner-inner-card">
             <p>Supercharge your learning by picking from our selection of over 5,000 courses and 150,000 videos</p>
             <div className="banner-buttons">
-              <a href="/login"><button className="light-button">Try for Free</button></a>
-              <a href="/course"><button id="popular-courses-btn" className="dark-button">Browse popular courses</button></a>
+              <Link to="/login"><button className="light-button">Try for Free</button></Link>
+              <Link to="/course"><button id="popular-courses-btn" className="dark-button">Browse popular courses</button></Link>
             </div>
           </div>
         </div>

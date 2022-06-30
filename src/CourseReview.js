@@ -4,7 +4,7 @@ import ReviewBar from "./ReviewBar";
 function CourseReview() {
     function searchReviews(event) {
         const searchbar = document.querySelector(".review-input")
-        console.log(event);
+
         if (event.key === "Enter" || event.type === "click") {
             searchbar.value = "";
         }

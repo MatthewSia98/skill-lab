@@ -1,8 +1,4 @@
-import { useState } from 'react';
-
 function ExploreTab() {
-    const [activeTab, setActiveTab] = useState(0);
-
     function selectTab(event) {
         const all = [...document.querySelectorAll(".unselected-tab")];
         all.forEach((e) => {e.className = "unselected-tab"});

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Login() {
     function getCredential(event) {
         if (event.key === "Enter") {
@@ -18,7 +20,7 @@ function Login() {
             </div>
             <input className="login-input" type="text" placeholder="Email" onKeyPress={getCredential}></input>  
             <input className="login-input" type="text" placeholder="Password" onKeyPress={getCredential}></input>
-            <a href="#"><button id="login-btn" className="light-button">Log In</button></a>
+            <Link to="/home"><button id="login-btn" className="light-button">Log In</button></Link>
             <a className="forgot-password" href="#">Forgot your password?</a>
             <p className="no-account">Don't have an account? <a href="#">Sign up</a></p>
         </div>
