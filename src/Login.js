@@ -8,7 +8,7 @@ function Login() {
     }
 
     function login() {
-        const login = document.querySelector("#login-btn");
+        const login = document.querySelector(".login");
         login.textContent = "Logged In";
     }
 
