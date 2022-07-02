@@ -5,7 +5,7 @@ function DropdownOption(props) {
         return (
             <div className="dropdown-option">
                 <Link className="dropdown-name" to="/course">{props.name}</Link>
-                <img className="dropdown-arrow" src={require("./icons/right-arrow.jpg")} />
+                <img className="dropdown-arrow" src={require("./icons/right-arrow.jpg")} alt="right arrow" />
             </div>
         );
     } else {

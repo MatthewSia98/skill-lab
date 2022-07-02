@@ -5,14 +5,14 @@ function Course() {
     return (
         <div className="course-page">
             <div className="course-main-banner">
-                <img src={require("./images/making-your-first-web-app.png")} />
+                <img src={require("./images/making-your-first-web-app.png")} alt="course preview" />
                 <div className="course-main-info">
                     <h1>Making your first web app</h1>
                     <a href="https://www.freecodecamp.org/" target="_">freeCodeCamp</a>
                     <div className="course-statistics">
                         <div className="course-main-rating">
                             <p>5.0</p>
-                            <img className="course-main-stars" src={require("./icons/5stars.PNG")} />
+                            <img className="course-main-stars" src={require("./icons/5stars.PNG")} alt="stars" />
                             <p className="course-main-nreviews"><a href="#reviews">(1,337 Reviews)</a></p>
                         </div>
                         <p>Posted on July 21, 2021</p>

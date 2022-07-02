@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Banner() {
     return (
         <div className="banner">
-        <img src={ home } alt="background image" />
+        <img src={ home } alt="home banner" />
         <div className="banner-card">
           <div className="slogan-div"><p className="slogan">Limitless Learning</p></div>
           <div className="banner-inner-card">

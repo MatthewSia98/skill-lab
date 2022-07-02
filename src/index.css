@@ -117,7 +117,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-flex-start;
 }
 
 .slogan-div {
@@ -139,14 +139,14 @@ body {
   margin: 40px;
   padding: 20px;
   font-size: 20px;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .banner-buttons {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 #popular-courses-btn {
@@ -351,7 +351,7 @@ a.dropdown-name:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   width: 40%;
 }
 
@@ -456,8 +456,8 @@ a.dropdown-name:hover {
 .course-review-stats {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-flex-start;
   font-size: 30px;
   width: 30%;
 }
@@ -508,9 +508,9 @@ a.dropdown-name:hover {
   margin-left: 20px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   width: 100%;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .review-stats h1 {
@@ -521,7 +521,7 @@ a.dropdown-name:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -566,7 +566,7 @@ a.dropdown-name:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .review-bar-icon {
@@ -583,7 +583,7 @@ a.dropdown-name:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .login-page h1 {
@@ -598,7 +598,7 @@ a.dropdown-name:hover {
   border-radius: 5px;
   font-size: 30px;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   padding: 0px 20px;
   width: 500px;
   height: 70px;

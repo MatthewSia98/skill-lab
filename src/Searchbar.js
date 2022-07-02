@@ -11,7 +11,7 @@ function Searchbar() {
     return (
         <div className="searchbar">
             <input className="search-input" type="text" placeholder="Search for a course" onKeyPress={searchCourse} />
-            <img id="search-icon" className="navbar-icon" src={search_icon} onClick={searchCourse} />
+            <img id="search-icon" className="navbar-icon" src={search_icon} alt="search icon" onClick={searchCourse} />
         </div>
     );
 }
