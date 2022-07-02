@@ -3,11 +3,13 @@ import rightArrow from './icons/right-arrow.jpg';
 import CourseCard from './CourseCard';
 
 function Carousel() {    
-    const shift = 115;
+    const shift = 100;
     function moveCarousel (event) {
         event.preventDefault();
         const clicked = event.target.closest(".carousel-button");
         const courseCards = [...document.querySelectorAll(".course-card")];
+        const coursesWidth = document.querySelector(".courses").clientWidth;
+        const marginPercentage = 20 * (courseCards.length - 1) / coursesWidth * 100;
 
         if (clicked.matches(".carousel-button.left")) {
             courseCards.forEach((card) => {
@@ -19,12 +21,12 @@ function Carousel() {
                 } else {
                     curr = parseInt(curr);
                 }
-                console.log(curr);
-                if (curr >= 6 * shift) {
-                    card.style.transform = `translateX(${-courseCards.length * shift + shift}%)`;
+
+                if (curr >= (6.5 - 1) * (shift + marginPercentage)) {
+                    card.style.transform = `translateX(${-(courseCards.length - 1) * (shift + marginPercentage)}%)`;
                 }
                 else {
-                    card.style.transform = `translateX(${curr + shift}%)`;
+                    card.style.transform = `translateX(${curr + shift + marginPercentage}%)`;
                 }
             })
         } else if (clicked.matches(".carousel-button.right")) {
@@ -37,11 +39,11 @@ function Carousel() {
                 } else {
                     curr = parseInt(curr);
                 }
-                console.log(curr);
-                if (curr <= -courseCards.length * shift + shift) {
+
+                if (curr <= -(courseCards.length - 1) * (shift + marginPercentage)) {
                     card.style.transform = "translateX(0%)";
                 } else {
-                    card.style.transform = `translateX(${curr - shift}%)`;
+                    card.style.transform = `translateX(${curr - shift - marginPercentage}%)`;
                 }
             })
         }

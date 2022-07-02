@@ -223,7 +223,6 @@ body {
   margin-bottom: 40px;
   width: 100%;
   align-self: center;
-  background: green;
   overflow: hidden;
 }
 
@@ -233,7 +232,6 @@ body {
   flex-grow: 1;
   width: 90%;
   overflow: hidden;
-  background: pink;
 }
 
 .course-card {
