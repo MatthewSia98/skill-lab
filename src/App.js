@@ -10,9 +10,6 @@ function App() {
       <div className="App">
         <Navbar />
         <Switch>
-          <Route path="/">
-            <Redirect to="/home" />
-          </Route>
           <Route path="/home">
             <Home />
           </Route>

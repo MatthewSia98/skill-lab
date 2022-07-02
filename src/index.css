@@ -193,27 +193,57 @@ body {
   height: 100px;
 }
 
+.carousel-button {
+  background: none;
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.carousel-button.left { 
+  margin-left: 20px;
+}
+
+.carousel-button.right {
+  margin-right: 20px;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+}
+
 .carousel {
+  --slider-index: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 40px;
   margin-bottom: 40px;
+  width: 100%;
+  align-self: center;
+  background: green;
+  overflow: hidden;
 }
 
 .courses {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  justify-content: space-evenly;
+  flex-grow: 1;
+  width: 90%;
+  overflow: hidden;
+  background: pink;
 }
 
 .course-card {
   display: flex;
   flex-direction: column;
   border: 4px solid #0A0C8A;
-  width: 250px;
+  min-width: 12.5%;
+  max-width: 12.5%;
+  margin: 0px 20px;
+  transition: transform 150ms ease-in-out;
 }
 
 .course-banner {

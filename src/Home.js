@@ -4,7 +4,7 @@ import Carousel from "./Carousel";
 
 function Home() {
     return (
-        <div>
+        <div className="homepage">
             <Banner />
             <div className="explore-header">
                 <h1>Start Exploring</h1>
