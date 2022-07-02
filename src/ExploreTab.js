@@ -11,7 +11,7 @@ function ExploreTab() {
 
     return (
         <div className="tabs">
-            <button className="unselected-tab" onClick={ selectTab }>Web Development</button>
+            <button className="selected-tab" onClick={ selectTab }>Web Development</button>
             <button className="unselected-tab" onClick={ selectTab }>Data Science</button>
             <button className="unselected-tab" onClick={ selectTab }>Photography</button>
             <button className="unselected-tab" onClick={ selectTab }>Business</button>

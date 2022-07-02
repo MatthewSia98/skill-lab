@@ -7,8 +7,8 @@ function Login() {
         }
     }
 
-    function login() {
-        const login = document.querySelector(".login");
+    function login(event) {
+        const login = document.querySelector("#nav-login");
         login.textContent = "Logged In";
     }
 
@@ -25,7 +25,7 @@ function Login() {
             </div>
             <input className="login-input" type="text" placeholder="Email" onKeyPress={getCredential}></input>  
             <input className="login-input" type="text" placeholder="Password" onKeyPress={getCredential}></input>
-            <Link to="/home"><button id="login-btn" className="light-button">Log In</button></Link>
+            <Link to="/home"><button id="login-btn" className="light-button" onClick={login}>Log In</button></Link>
             <a className="forgot-password" href="#">Forgot your password?</a>
             <p className="no-account">Don't have an account? <a href="#">Sign up</a></p>
         </div>
