@@ -8,7 +8,7 @@ body {
   flex-direction: row;
   align-items: center;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 25px;
   padding: 5px 0px 5px;
 }
 
@@ -32,7 +32,6 @@ body {
   align-items: center;
   justify-content: space-evenly;
   padding: 5px 0px 5px;
-  font-size: 20px;
 }
 
 #skill-lab {
@@ -156,10 +155,11 @@ body {
 
 .explore-header {
   margin-left: 50px;
+  font-size: 25px;
 }
 
 .explore-description {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .tabs {
@@ -173,7 +173,7 @@ body {
   background-color: white;
   border: 2px solid #0A0C8A;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 25px;
   padding: 5px;
   cursor: pointer;
 }
@@ -183,7 +183,7 @@ body {
   border: 2px solid #0A0C8A;
   color: white;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 25px;
   padding: 5px;
   cursor: pointer;
 }
@@ -242,6 +242,7 @@ body {
   max-width: 12.5%;
   margin: 0px 20px;
   transition: transform 150ms ease-in-out;
+  font-size: 20px;
 }
 
 .course-banner {
