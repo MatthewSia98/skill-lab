@@ -10,6 +10,8 @@ function Carousel() {
         const courseCards = [...document.querySelectorAll(".course-card")];
         const coursesWidth = document.querySelector(".courses").clientWidth;
         const marginPercentage = 20 * (courseCards.length - 1) / coursesWidth * 100;
+        const ncards = coursesWidth / (courseCards[0].clientWidth + 40);
+        console.log(ncards);
 
         if (clicked.matches(".carousel-button.left")) {
             courseCards.forEach((card) => {
@@ -22,7 +24,7 @@ function Carousel() {
                     curr = parseInt(curr);
                 }
 
-                if (curr >= (6.5 - 1) * (shift + marginPercentage)) {
+                if (curr >= (ncards - 1) * (shift + marginPercentage)) {
                     card.style.transform = `translateX(${-(courseCards.length - 1) * (shift + marginPercentage)}%)`;
                 }
                 else {
