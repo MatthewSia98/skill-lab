@@ -5,13 +5,16 @@ function Signup() {
         window.opener.location.replace("/#/home");
         console.log(event.target);
         event.preventDefault();
+        /*
         const firstName = document.querySelector("#first-name").value;
         const lastName = document.querySelector("#last-name").value;
         const email = document.querySelector("#email").value;
+        const password = document.querySelector("#password").value;
+        */
         window.close();
         const login = window.opener.document.querySelector("#nav-login");
         login.textContent = "Logged in";
-        window.opener.console.log(firstName, lastName, email);
+        //window.opener.console.log(firstName, lastName, email, password);
     }
 
     return (
@@ -28,6 +31,10 @@ function Signup() {
                 <div className="signup-field">
                     <label for="email">Email</label><br />
                     <input type="text" id="email" placeholder="Email"></input><br />
+                </div>
+                <div className="signup-field">
+                    <label for="password">Email</label><br />
+                    <input type="text" id="password" placeholder="Password"></input><br />
                 </div>
                 <button className="signup-btn" onClick={signup}><Link to="/home">Sign up</Link></button>
             </form>
