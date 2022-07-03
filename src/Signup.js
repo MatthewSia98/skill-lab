@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 function Signup() {
     function signup(event) {
         window.opener.location.replace("/#/home");
-        console.log(event.target);
         event.preventDefault();
         /*
         const firstName = document.querySelector("#first-name").value;
