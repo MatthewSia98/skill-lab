@@ -3,69 +3,50 @@ body {
 }
 
 .navbar {
-  background-color: #0A0C8A;
+  position: absolute;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  background-color: #0A0C8A;
+  height: 100px;
+  width: 100%;
   margin: 0 auto;
   font-size: 25px;
   padding: 5px 0px 5px;
 }
 
-.left-links-div {
-  display: flex;
-  flex-direction: row;
-  flex: 1 1 auto;
-  /*background-color: gray;
-  border: 2px solid black;*/
-  justify-content: space-around;
-  align-items: center;
-  padding: 5px 0px 5px;
-}
-
-.right-links-div {
-  display: flex;
-  flex-direction: row;
-  flex: 1 1 auto;
-  /*background-color: lightcoral;
-  border: 2px solid black;*/
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 5px 0px 5px;
-}
-
 #skill-lab {
-  position: absolute;
-  left: 20px;
+  margin-left: 20px;
   font-size: 40px;
 }
 
-.navbar .categories {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px;
+.navbar * {
+  display: inline-block;
+}
+
+.categories {
   color: white;
 }
 
-.navbar .searchbar {
+.searchbar {
   display: flex;
   flex-direction: row;
-  flex: 1 1 auto;
-  /*background-color: lightgreen;
-  border: 2px solid black;*/
+  align-items: center;
   justify-content: center;
-  margin: 5px 0px 5px;
+  margin: 5px;
+  height: 50%;
+  width: 50%;
 }
 
 .search-input {
-  width: 75%;
+  width: 100%; 
+  height: 100%;
   font-size: 20px;
 }
 
 .login {
-  position: absolute;
-  right: 20px;
+  float: right; 
+  margin-right: 20px;
 }
 
 .light-button {
@@ -101,8 +82,6 @@ body {
 #search-icon {
   width: 50px;
   height: 50px;
-  position: relative;
-  top: 50%;
 }
 
 .banner {
@@ -139,6 +118,7 @@ body {
   padding: 20px;
   font-size: 20px;
   align-items: flex-start;
+  overflow: hidden;
 }
 
 .banner-buttons {
@@ -149,8 +129,7 @@ body {
 }
 
 #popular-courses-btn {
-  position: relative;
-  left: 30px;
+  margin-left: 30px;
 }
 
 .explore-header {
@@ -258,6 +237,8 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 5px;
+  overflow: hidden;
+  position: relative;
 }
 
 .course-rating {
@@ -278,28 +259,26 @@ body {
   left: 10px;
 }
 
-.dropdown-content {
-  background-color:white;
-  display: none;
+.dropdown-container {
+  display: flex;
   position: absolute;
-  flex-direction: row;
-  border: 2px solid #0A0C8A;
-  height: 50%;
-  z-index: 2;
+  background: white;
+  z-index: 10;
+  height: fit-content;
+  min-height: 50vh;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-columns {
   display: flex;
 }
 
-.dropdown-col {
-  display: flex; 
+.dropdown-column {
+  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  border: 1px solid #0A0C8A;
-  padding-left: 5px;
-  padding-right: 10px;
-  width: 200px;
+  justify-content: space-around;
+  border: 2px solid black;
+  padding: 0px 10px;
+  width: 300px;
 }
 
 .dropdown-option {
@@ -307,6 +286,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 10px 0px;
 }
 
 a.dropdown-name {
@@ -360,7 +340,7 @@ a.dropdown-name:hover {
 }
 
 .course-main-nreviews {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .pricing {

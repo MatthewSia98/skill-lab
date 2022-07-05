@@ -19,13 +19,13 @@ function Course() {
                     </div>
                     <p>In this course, you will learn how to build your first web application using HTML, Sass, and Javascript</p>
 
-                    <div class="course-pricing">
+                    <div className="course-pricing">
                         <button className="dark-button pricing">FREE</button>
                     </div>
                 </div>
             </div>
             <div className="course-video">
-                <iframe width="1000" height="500" src="https://www.youtube.com/embed/y51Cv4wnsPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="1000" height="500" src="https://www.youtube.com/embed/y51Cv4wnsPw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
             <div className="course-instructions">
                 <InstructionStep name="Installing Software" instruction={["You can download Sass ", <a href="https://sass-lang.com/" target="_">here</a>, "."]} />
