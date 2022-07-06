@@ -3,7 +3,6 @@ body {
 }
 
 .navbar {
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -300,11 +299,6 @@ a.dropdown-name:hover {
 .dropdown-arrow {
   width: 10px;
   height: 10px;
-}
-
-.course-page {
-  position: relative;
-  top: 110px;
 }
 
 .course-main-banner {
@@ -652,6 +646,7 @@ a.dropdown-name:hover {
   margin-top: 60px;
   border: 2px solid black;
   padding: 40px 20px;
+  margin-bottom: 60px;
 }
 
 .signup-field {

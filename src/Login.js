@@ -13,7 +13,7 @@ function Login() {
     }
 
     function openSignUpWindow(event) {
-        window.open("/skill-lab/#/signup", "popup", "width=600, height=600");
+        window.open("/skill-lab/#/signup", "popup", "width=600, height=800");
     }
 
     return (
