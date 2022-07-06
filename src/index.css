@@ -260,11 +260,10 @@ body {
 }
 
 .dropdown-container {
-  display: none;
+  display: flex;
   position: absolute;
   background: white;
   z-index: 10;
-  height: fit-content;
   min-height: 50vh;
 }
 
@@ -273,7 +272,7 @@ body {
 }
 
 .dropdown-column {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   border: 2px solid black;

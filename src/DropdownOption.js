@@ -23,29 +23,29 @@ function DropdownOption(props) {
                   "Music Technique": ["Fingerstyle Guitar", "Blues Guitar", "Music Composition", "DJ", "Music Theory", "Reading Music", "Guitar", "Rock Guitar", "Piano"],
                   "Music Software": ["FL Studio", "Ableton Live", "Logic Pro", "Music Production", "GarageBand", "ProTools", "Cubase", "DJ", "Music Mixing"]
                  },
-        "Finance & Accounting": {"Accounting & Bookkeeping": [],
-                                 "Compliance": [],
-                                 "Cryptocurrency & Blockchain": [],
-                                 "Economics": [],
-                                 "Finance": [],
-                                 "Investing & Trading": [],
-                                 "Money Management Tools": [],
-                                 "Taxes": []
+        "Finance & Accounting": {"Accounting & Bookkeeping": ["Accounting", "Bookkeeping", "Financial Accounting", "Finance Fundamentals", "QuickBooks Online", "Startup", "IFRS", "QuickBooks", "SAP FICO"],
+                                 "Compliance": ["Anti-Money Laundering", "Sarbanes-Oxley (SOX)", "Internal Controls", "CAMS Certification", "Internal Auditing", "Risk Management", "Enterprise Risk Management (ERM)", "Trade and Commerce", "Fraud Analytics"],
+                                 "Cryptocurrency & Blockchain": ["Cryptocurrency", "NFT (Non-Fungible Tokens)", "Blockchain", "Bitcoin", "Metaverse", "Binance", "Day Trading", "Online Arbitrage", "Algorithmic Trading"],
+                                 "Economics": ["Macroeconomics", "Microeconomics", "Stata", "Econometrics", "Finance Fundamentals", "Global Economics", "Political Science", "Regression Analysis"],
+                                 "Finance": ["Personal Finance", "Investment Banking", "Finance Fundamentals", "CFA", "Financial Management", "Corporate Finance", "Financial Analysis", "Banking", "Accounting"],
+                                 "Investing & Trading": ["Stock Trading", "Investing", "Forex", "Technical Analysis", "Algorithmic Trading", "Options Trading", "Day Trading", "Financial Markets", "Financial Trading"],
+                                 "Money Management Tools": ["QuickBooks Online", "QuickBooks", "SAP FICO", "Excel", "Xero", "QuickBooks Pro", "Finanical Analysis", "Excel Analytics", "Financial Modeling"],
+                                 "Taxes": ["Tax Preparation", "Accounting", "Goods and Services Tax", "Value Added Tax (VAT)", "QuickBooks Online", "Financial Accounting", "Law", "Home Business", "Business Strategy"]
                                 },
-        "IT & Software": {"IT Certifications": [],
-                          "Network & Security": [],
-                          "Hardware": [],
-                          "Operating Systems & Servers": []
+        "IT & Software": {"IT Certifications": ["AWS Certification", "Microsoft Certification", "AWS Certified Solutions Architect - Associate", "AWS Certified Cloud Practitioner", "CompTIA A+", "Amazon AWS", "Cisco CCNA", "CompTIA Security+", "Microsoft AZ-900"],
+                          "Network & Security": ["Ethical Hacking", "Cyber Security", "Network Security", "Penetration Testing", "CompTIA Network+", "Kubernetes", "IT Networking Fundamentals", "Terraform", "Wireshark"],
+                          "Hardware": ["PLC", "Arduino", "Electronics", "Microcontroller", "Embedded Systems", "Raspberry Pi", "Embedded C", "FPGA", "Cell Phone Repair"],
+                          "Operating Systems & Servers": ["Linux", "Linux Administration", "Windows Server", "Shell Scripting", "Active Directory", "PowerShell", "Linux Command Line", "VMware Vsphere", "LPIC-1: Linux Administrator"]
                          },
-        "Health & Fitness": {"Fitness": [],
-                             "General Health": [],
-                             "Sports": [],
-                             "Nutrition & Diet": [],
-                             "Yoga": [],
-                             "Mental Health": [],
-                             "Martial Arts & Self Defense": [],
-                             "Safety & First Aid": [],
-                             "Meditation": []
+        "Health & Fitness": {"Fitness": ["Pilates", "Muscle Building", "Home Workout", "Teacher Training", "Strength Training", "Weight Loss", "Stretching Exercise", "Barre Workout"],
+                             "General Health": ["Herbalism", "Holistic Medicine", "Massage", "Natural Medicine", "Aromatherapy", "Reflexology", "Accupressure", "Health", "Ayurveda"],
+                             "Sports": ["Swimming", "Sport Psychology", "Soccer", "Tennis", "Sports Coaching", "Golf", "Sports Massage", "Running", "Sports Management"],
+                             "Nutrition & Diet": ["Nutrition", "Dieting", "Health Coaching", "Weight Loss", "Sports Nutrition", "Vegan Cooking", "Ketogenic Diet", "Gut Health", "Herbalism"],
+                             "Yoga": ["Yoga for Kids", "Breathing Techniques", "Pranayama", "Chair Yoga", "Face Yoga", "Parental Yoga", "Kundalini", "Teacher Training"],
+                             "Mental Health": ["CBT Cognitive Behavioral Therapy", "Art Therapy", "Psychology", "Psychotherapy", "Dialetical Behavior Therapy (DBT)", "Acceptance and Commitment Therapy (ACT)", "Counseling", "REBT"],
+                             "Martial Arts & Self Defense": ["Krav Maga", "Self-Defense", "Martial Arts", "Boxing", "Close Combat", "Tai Chi", "Brazilian Jiu-Jitsu", "Wing Chun", "Muay Thai"],
+                             "Safety & First Aid": ["First Aid", "Herbalism", "Workplace Health and Safety", "Fire Safety", "Survival Skills", "OSHA", "Grief Healing", "Health", "Kinesiology Taping"],
+                             "Meditation": ["Sound Therapy", "Mindfulness", "Qi Gong", "Reiki", "Breathing Techniques", "Yoga", "Energy Healing", "Astral Projection"]
                             }
     };
 

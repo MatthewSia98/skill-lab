@@ -197,6 +197,181 @@ function DropdownMenu(props) {
                 <DropdownOption col="3" name="GarageBand" /> 
                 <DropdownOption col="3" name="ProTools" /> 
                 <DropdownOption col="3" name="Cubase" />
+                
+                <DropdownOption col="3" name="Sound Therapy" />
+                <DropdownOption col="3" name="Mindfulness" />
+                <DropdownOption col="3" name="Qi Gong" />
+                <DropdownOption col="3" name="Reiki" />
+                <DropdownOption col="3" name="Breathing Techniques" />
+                <DropdownOption col="3" name="Yoga" />
+                <DropdownOption col="3" name="Energy Healing" />
+                <DropdownOption col="3" name="Astral Projection" />
+                <DropdownOption col="3" name="First Aid" />
+                <DropdownOption col="3" name="Herbalism" />
+                <DropdownOption col="3" name="Workplace Health and Safety" />
+                <DropdownOption col="3" name="Fire Safety" />
+                <DropdownOption col="3" name="Survival Skills" />
+                <DropdownOption col="3" name="OSHA" />
+                <DropdownOption col="3" name="Grief Healing" />
+                <DropdownOption col="3" name="Health" />
+                <DropdownOption col="3" name="Kinesiology Taping" />
+                <DropdownOption col="3" name="Krav Maga" />
+                <DropdownOption col="3" name="Self-Defense" />
+                <DropdownOption col="3" name="Martial Arts" />
+                <DropdownOption col="3" name="Boxing"/>
+                <DropdownOption col="3" name="Close Combat" />
+                <DropdownOption col="3" name="Tai Chi" />
+                <DropdownOption col="3" name="Brazilian Jiu-Jitsu" />
+                <DropdownOption col="3" name="Wing Chun" />
+                <DropdownOption col="3" name="Muay Thai" />
+
+                <DropdownOption col="3" name="CBT Cognitive Behavioral Therapy" />
+                <DropdownOption col="3" name="Art Therapy" />
+                <DropdownOption col="3" name="Psychology" />
+                <DropdownOption col="3" name="Psychotherapy" />
+                <DropdownOption col="3" name="Dialetical Behavior Therapy (DBT)" />
+                <DropdownOption col="3" name="Acceptance and Commitment Therapy (ACT)" />
+                <DropdownOption col="3" name="Counseling" />
+                <DropdownOption col="3" name="REBT" />
+                <DropdownOption col="3" name="Yoga for Kids" />
+                <DropdownOption col="3" name="Pranayama" />
+                <DropdownOption col="3" name="Chair Yoga" />
+                <DropdownOption col="3" name="Face Yoga" />
+                <DropdownOption col="3" name="Parental Yoga" />
+                <DropdownOption col="3" name="Kundalini" />
+                <DropdownOption col="3" name="Teacher Training" />
+                <DropdownOption col="3" name="Nutrition" />
+                <DropdownOption col="3" name="Dieting" />
+                <DropdownOption col="3" name="Health Coaching" />
+                <DropdownOption col="3" name="Weight Loss" />
+                <DropdownOption col="3" name="Sports Nutrition" />
+                <DropdownOption col="3" name="Vegan Cooking" />
+                <DropdownOption col="3" name="Ketogenic Diet" />
+                <DropdownOption col="3" name="Gut Health" />
+
+                <DropdownOption col="3" name="Swimming" />
+                <DropdownOption col="3" name="Sport Psychology" />
+                <DropdownOption col="3" name="Soccer" />
+                <DropdownOption col="3" name="Tennis" />
+                <DropdownOption col="3" name="Sports Coaching" />
+                <DropdownOption col="3" name="Golf" />
+                <DropdownOption col="3" name="Sports Massage" />
+                <DropdownOption col="3" name="Running" />
+                <DropdownOption col="3" name="Sports Management" />
+
+                <DropdownOption col="3" name="Holistic Medicine" />
+                <DropdownOption col="3" name="Massage" />
+                <DropdownOption col="3" name="Natural Medicine" />
+                <DropdownOption col="3" name="Aromatherapy" />
+                <DropdownOption col="3" name="Reflexology" />
+                <DropdownOption col="3" name="Accupressure" />
+                <DropdownOption col="3" name="Ayurveda" />
+                <DropdownOption col="3" name="Pilates" />
+                <DropdownOption col="3" name="Muscle Building" />
+                <DropdownOption col="3" name="Home Workout" />
+                <DropdownOption col="3" name="Strength Training" />
+                <DropdownOption col="3" name="Stretching Exercise" />
+                <DropdownOption col="3" name="Barre Workout" />
+
+                <DropdownOption col="3" name="Linux" />
+                <DropdownOption col="3" name="Linux Administration" />
+                <DropdownOption col="3" name="Windows Server" />
+                <DropdownOption col="3" name="Shell Scripting" />
+                <DropdownOption col="3" name="Active Directory" />
+                <DropdownOption col="3" name="PowerShell" />
+                <DropdownOption col="3" name="Linux Command Line" />
+                <DropdownOption col="3" name="VMware Vsphere" />
+                <DropdownOption col="3" name="LPIC-1: Linux Administrator" />
+
+                <DropdownOption col="3" name="PLC" />
+                <DropdownOption col="3" name="Arduino" />
+                <DropdownOption col="3" name="Electronics" />
+                <DropdownOption col="3" name="Microcontroller" />
+                <DropdownOption col="3" name="Embedded Systems" />
+                <DropdownOption col="3" name="Raspberry Pi" />
+                <DropdownOption col="3" name="Embedded C" />
+                <DropdownOption col="3" name="FPGA" />
+                <DropdownOption col="3" name="Cell Phone Repair" />
+
+                <DropdownOption col="3" name="Ethical Hacking" />
+                <DropdownOption col="3" name="Cyber Security" />
+                <DropdownOption col="3" name="Network Security" />
+                <DropdownOption col="3" name="Penetration Testing" />
+                <DropdownOption col="3" name="CompTIA Network+" />
+                <DropdownOption col="3" name="Kubernetes" />
+                <DropdownOption col="3" name="IT Networking Fundamentals" />
+                <DropdownOption col="3" name="Terraform" />
+                <DropdownOption col="3" name="Wireshark" />
+                <DropdownOption col="3" name="AWS Certification" />
+                <DropdownOption col="3" name="Microsoft Certification" />
+                <DropdownOption col="3" name="AWS Certified Solutions Architect - Associate" />
+                <DropdownOption col="3" name="AWS Certified Cloud Practitioner" />
+                <DropdownOption col="3" name="CompTIA A+" />
+                <DropdownOption col="3" name="Amazon AWS" />
+                <DropdownOption col="3" name="Cisco CCNA" />
+                <DropdownOption col="3" name="CompTIA Security+" />
+                <DropdownOption col="3" name="Microsoft AZ-900" />
+
+                <DropdownOption col="3" name="Accounting" />
+                <DropdownOption col="3" name="Bookkeeping" />
+                <DropdownOption col="3" name="Financial Accounting" />
+                <DropdownOption col="3" name="Finance Fundamentals" />
+                <DropdownOption col="3" name="QuickBooks Online" />
+                <DropdownOption col="3" name="Startup" />
+                <DropdownOption col="3" name="IFRS" />
+                <DropdownOption col="3" name="QuickBooks" />
+                <DropdownOption col="3" name="SAP FICO" />
+                <DropdownOption col="3" name="Anti-Money Laundering" />
+                <DropdownOption col="3" name="Sarbanes-Oxley (SOX)" />
+                <DropdownOption col="3" name="Internal Controls" />
+                <DropdownOption col="3" name="CAMS Certification" />
+                <DropdownOption col="3" name="Internal Auditing" />
+                <DropdownOption col="3" name="Risk Management" />
+                <DropdownOption col="3" name="Enterprise Risk Management (ERM)" />
+                <DropdownOption col="3" name="Trade and Commerce" />
+                <DropdownOption col="3" name="Fraud Analytics" />
+                <DropdownOption col="3" name="Cryptocurrency" />
+                <DropdownOption col="3" name="NFT (Non-Fungible Tokens)" />
+                <DropdownOption col="3" name="Blockchain" />
+                <DropdownOption col="3" name="Bitcoin" />
+                <DropdownOption col="3" name="Metaverse" />
+                <DropdownOption col="3" name="Binance" />
+                <DropdownOption col="3" name="Day Trading" />
+                <DropdownOption col="3" name="Online Arbitrage" />
+                <DropdownOption col="3" name="Algorithmic Trading" />
+                <DropdownOption col="3" name="Macroeconomics" />
+                <DropdownOption col="3" name="Microeconomics" />
+                <DropdownOption col="3" name="Stata" />
+                <DropdownOption col="3" name="Econometrics" />
+                <DropdownOption col="3" name="Global Economics" />
+                <DropdownOption col="3" name="Political Science" />
+                <DropdownOption col="3" name="Regression Analysis" />
+                <DropdownOption col="3" name="Personal Finance" />
+                <DropdownOption col="3" name="Investment Banking" />
+                <DropdownOption col="3" name="CFA" />
+                <DropdownOption col="3" name="Financial Management" />
+                <DropdownOption col="3" name="Corporate Finance" />
+                <DropdownOption col="3" name="Financial Analysis" />
+                <DropdownOption col="3" name="Banking" />
+                <DropdownOption col="3" name="Stock Trading" />
+                <DropdownOption col="3" name="Investing" />
+                <DropdownOption col="3" name="Forex" />
+                <DropdownOption col="3" name="Technical Analysis" />
+                <DropdownOption col="3" name="Options Trading" />
+                <DropdownOption col="3" name="Financial Markets" />
+                <DropdownOption col="3" name="Financial Trading" />
+                <DropdownOption col="3" name="Excel" />
+                <DropdownOption col="3" name="Xero" />
+                <DropdownOption col="3" name="QuickBooks Pro" />
+                <DropdownOption col="3" name="Finanical Analysis" />
+                <DropdownOption col="3" name="Excel Analytics" />
+                <DropdownOption col="3" name="Financial Modeling" />
+                <DropdownOption col="3" name="Tax Preparation" />
+                <DropdownOption col="3" name="Goods and Services Tax" />
+                <DropdownOption col="3" name="Value Added Tax (VAT)" />
+                <DropdownOption col="3" name="Law" />
+                <DropdownOption col="3" name="Home Business" />
+                <DropdownOption col="3" name="Business Strategy"/>
             </div>
         </div>
     );
