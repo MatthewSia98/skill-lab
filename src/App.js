@@ -19,7 +19,7 @@ function App() {
           </Route>
           <Route path="/course">
             <Course />
-            </Route>
+          </Route>
           <Route path="/login">
             <Login />
           </Route>

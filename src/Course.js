@@ -8,6 +8,7 @@ function Course() {
                 <img src={require("./images/making-your-first-web-app.png")} alt="course preview" />
                 <div className="course-main-info">
                     <h1>Making your first web app</h1>
+                    <p>Posted on July 21, 2021</p>
                     <a href="https://www.freecodecamp.org/" target="_">freeCodeCamp</a>
                     <div className="course-statistics">
                         <div className="course-main-rating">
@@ -15,7 +16,6 @@ function Course() {
                             <img className="course-main-stars" src={require("./icons/5stars.PNG")} alt="stars" />
                             <p className="course-main-nreviews"><a href="#reviews">(1,337 Reviews)</a></p>
                         </div>
-                        <p>Posted on July 21, 2021</p>
                     </div>
                     <p>In this course, you will learn how to build your first web application using HTML, Sass, and Javascript</p>
 
