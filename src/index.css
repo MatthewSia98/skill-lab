@@ -260,7 +260,7 @@ body {
 }
 
 .dropdown-container {
-  display: flex;
+  display: none;
   position: absolute;
   background: white;
   z-index: 10;
