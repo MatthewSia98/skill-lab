@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Signup() {
     function signup(event) {
-        window.opener.location.replace("/#/home");
+        window.opener.location.replace("/skill-lab/#/home");
         event.preventDefault();
         /*
         const firstName = document.querySelector("#first-name").value;
