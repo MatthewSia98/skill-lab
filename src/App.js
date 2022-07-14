@@ -3,6 +3,7 @@ import Home from './Home';
 import Course from './Course';
 import Login from './Login';
 import Signup from './Signup';
+import CategoryPage from './CategoryPage'
 import { HashRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/course">
             <Course />
           </Route>
+          <Route exact path="/category/:col/:name" component={CategoryPage} />
           <Route path="/login">
             <Login />
           </Route>

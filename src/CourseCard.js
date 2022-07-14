@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function CourseCard(props) {
     return (
-        <div className="course-card">
+        <div className={"course-card " + props.first + " " + props.second}>
             <div className="course-banner">
                 <Link to="/course"><img className="course-preview" src={ require(`${props.path}`) } alt="course preview"/></Link>
             </div>

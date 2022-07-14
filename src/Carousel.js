@@ -1,17 +1,16 @@
 import leftArrow from './icons/left-arrow.jpg';
 import rightArrow from './icons/right-arrow.jpg';
-import CourseCard from './CourseCard';
 
-function Carousel() {    
+function Carousel(props) {    
     const shift = 100;
     function moveCarousel (event) {
         event.preventDefault();
         const clicked = event.target.closest(".carousel-button");
-        const courseCards = [...document.querySelectorAll(".course-card")];
+        //console.log(".courses." + props.first.replace(/\s/g, '') + "." + props.second.replace(/\s/g, '') + " " + ".course-card");
+        const courseCards = [...document.querySelectorAll(".courses." + props.first.replace(/\s/g, '') + "." + props.second.replace(/\s/g, '') + " " + ".course-card")];
         const coursesWidth = document.querySelector(".courses").clientWidth;
         const marginPercentage = 20 * (courseCards.length - 1) / coursesWidth * 100;
         const ncards = coursesWidth / (courseCards[0].clientWidth + 40);
-        console.log(ncards);
 
         if (clicked.matches(".carousel-button.left")) {
             courseCards.forEach((card) => {
@@ -52,25 +51,10 @@ function Carousel() {
     }
 
     return (
-        <div className="carousel">
+        <div className={"carousel " + props.first.replace(/\s/g, '') + " " +  props.second.replace(/\s/g, '')} style={props.style}>
             <button className="carousel-button left"><img className="carousel-arrow" src={leftArrow} alt="left arrow" onClick={moveCarousel} /></button>
-            <div className="courses">
-                <CourseCard path="./images/what-is-web-development.png" name="Introduction to Web Development" org="freeCodeCamp" />
-                <CourseCard path="./images/making-your-first-web-app.png" name="Making your first web app" org="freeCodeCamp" />
-                <CourseCard path="./images/html-for-beginners.png" name="HTML for beginners" org="freeCodeCamp" />
-                <CourseCard path="./images/learn-bootstrap.png" name="Learn Bootstrap" org="freeCodeCamp" />
-                <CourseCard path="./images/learn-bootstrap.png" name="Learn Bootstrap" org="freeCodeCamp" />
-                <CourseCard path="./images/html-for-beginners.png" name="HTML for beginners" org="freeCodeCamp" />
-                <CourseCard path="./images/making-your-first-web-app.png" name="Making your first web app" org="freeCodeCamp" />
-                <CourseCard path="./images/what-is-web-development.png" name="Introduction to Web Development" org="freeCodeCamp" />
-                <CourseCard path="./images/what-is-web-development.png" name="Introduction to Web Development" org="freeCodeCamp" />
-                <CourseCard path="./images/making-your-first-web-app.png" name="Making your first web app" org="freeCodeCamp" />
-                <CourseCard path="./images/html-for-beginners.png" name="HTML for beginners" org="freeCodeCamp" />
-                <CourseCard path="./images/learn-bootstrap.png" name="Learn Bootstrap" org="freeCodeCamp" />
-                <CourseCard path="./images/learn-bootstrap.png" name="Learn Bootstrap" org="freeCodeCamp" />
-                <CourseCard path="./images/html-for-beginners.png" name="HTML for beginners" org="freeCodeCamp" />
-                <CourseCard path="./images/making-your-first-web-app.png" name="Making your first web app" org="freeCodeCamp" />
-                <CourseCard path="./images/what-is-web-development.png" name="Introduction to Web Development" org="freeCodeCamp" />
+            <div className={"courses " + props.first.replace(/\s/g, '') + " " + props.second.replace(/\s/g, '')}>
+                {props.items}
             </div>
             <button className="carousel-button right"><img className="carousel-arrow" src={rightArrow} alt="right arrow" onClick={moveCarousel} /></button>
         </div>

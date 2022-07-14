@@ -30,7 +30,7 @@ function CourseReview() {
                 </div>
             </div>
             <div className="course-review-content">
-                <div class="review-searchbar">
+                <div className="review-searchbar">
                     <input className="review-input" type="text" placeholder="Search Reviews" onKeyPress={searchReviews} />
                     <img className="review-search-icon" src={require("./icons/search.png")} alt="search icon" onClick={searchReviews} />
                 </div>

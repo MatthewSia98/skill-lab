@@ -1,6 +1,8 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
+import CourseCard from './CourseCard';
+import Carousel from './Carousel';
 
-function DropdownOption(props) {
+function CategoryCard(props) {
     const items = {
         "Development": {"Web Development": ["Javascript", "React", "Angular", "CSS", "Node.js", "PHP", "HTML5", "Typescript"],
                         "Data Science": ["Python", "Machine Learning", "Deep Learning", "Data Analysis", "R", "Statistics", "Natural Language Processing"],
@@ -49,112 +51,25 @@ function DropdownOption(props) {
                             }
     };
 
-    function showTwo(event) {
-        const options = [...document.querySelectorAll(".dropdown-column.one .dropdown-option")];
-        const selected = event.target.closest(".dropdown-option");
-        const selectedName = selected.children[0].textContent;
+    const thirds = items[props.first][props.second];
+    const carouselItems = [];
+    for (let i = 0; i < thirds.length; i++) {
+        const currThird = thirds[i];
+        let path;
+        if (i % 4 === 0) path = './images/what-is-web-development.png';
+        else if (i % 4 === 1) path = './images/making-your-first-web-app.png';
+        else if (i % 4 === 2) path = './images/html-for-beginners.png';
+        else path = './images/learn-bootstrap.png'
 
-        const twos = [...document.querySelectorAll(".dropdown-column.two .dropdown-option")]
-        twos.forEach((two) => {
-            const a = two.children[0];
-            a.style.color = "black"
-
-            two.style.display = "none";
-            if (a.textContent in items[selectedName]) {
-                two.style.display = "flex";
-            }
-        });
-
-        options.forEach((option) => {
-            if (option.isSameNode(selected)) {
-                option.children[0].style.color = "blue";
-            } else {
-                option.children[0].style.color = "black";
-            }
-        })
-
-        document.querySelector(".dropdown-column.one").style.display = "flex"
-        document.querySelector(".dropdown-column.two").style.display = "flex"
-        document.querySelector(".dropdown-column.three").style.display = "none"
-    }
-      
-    function showThree(event) {
-        const options = [...document.querySelectorAll(".dropdown-column.two .dropdown-option")];
-        const selected = event.target.closest(".dropdown-option");
-        const secondName = selected.children[0].textContent;
-
-        let firstName;
-        const firsts = [...document.querySelectorAll(".dropdown-column.one .dropdown-option")];
-        for (const i in firsts) {
-            const curr = firsts[i];
-            const a = curr.children[0];
-            const color = a.style.getPropertyValue('color');
-            if (color === "blue") firstName = a.textContent;
-        }
-
-        const thirds = [...document.querySelectorAll(".dropdown-column.three .dropdown-option")]
-        //console.log(items[firstName][secondName])
-        thirds.forEach((third) => {
-            const a = third.children[0];
-            a.style.color = "black"
-
-            third.style.display = "none";
-            if (items[firstName][secondName].includes(a.textContent)) {
-                third.style.display = "flex";
-            }
-        });
-
-        options.forEach((option) => {
-            if (option.isSameNode(selected)) {
-                option.children[0].style.color = "blue";
-            } else {
-                option.children[0].style.color = "black";
-            }
-        })
-
-        document.querySelector(".dropdown-column.one").style.display = "flex"
-        document.querySelector(".dropdown-column.two").style.display = "flex"
-        document.querySelector(".dropdown-column.three").style.display = "flex"
+        carouselItems.push(<CourseCard path={path} name={currThird} org="freeCodeCamp" first={props.first} second={props.second} key={i} />);
     }
 
-    function colorThree(event) {
-        const options = [...document.querySelectorAll(".dropdown-column.three .dropdown-option")];
-        const selected = event.target.closest(".dropdown-option");
-        //console.log(selected);
-
-        options.forEach((option) => {
-            if (option.isSameNode(selected)) {
-                option.children[0].style.color = "blue";
-            } else {
-                option.children[0].style.color = "black";
-            }
-        })
-    }
-
-    function handleDropdown(col) {
-        if (col === "1") {
-            return showTwo;
-        } else if (col === "2") {
-            return showThree;
-        } else if (col === "3") {
-            return colorThree;
-        }
-    }
-    
-    if (props.arrow) {
-        return (
-            <div className={"dropdown-option "  + props.parent} onMouseOver={handleDropdown(props.col)}>
-                <Link className="dropdown-name" to={"/category/" + props.col + "/" + props.name}>{props.name}</Link>
-                <img className="dropdown-arrow" src={require("./icons/right-arrow.jpg")} alt="right arrow" />
-            </div>
-        );
-    } else {
-        return (
-            <div className="dropdown-option" onMouseOver={handleDropdown(props.col)}>
-                <Link className="dropdown-name" to="/course">{props.name}</Link>
-            </div>
-        );
-    }
+    return (
+        <div className="category-card">
+            <h2>{props.second}</h2>
+            <Carousel first={props.first} second={props.second} items={carouselItems} />
+        </div>
+    );
 }
 
-export default DropdownOption;
+export default CategoryCard;

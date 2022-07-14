@@ -16,7 +16,7 @@ function InstructionStep(props) {
     }
 
     return (
-        <div className="instruction-step">
+        <div className="instruction-step" key={props.name}>
             <div className="instruction-collapsible" onClick={toggleInstruction}>
                 <p>{props.name}</p>
                 <img className="course-down-arrow" src={require("./icons/down-arrow.png")} alt="down arrow" />

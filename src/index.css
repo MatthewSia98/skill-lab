@@ -221,6 +221,7 @@ body {
   margin: 0px 20px;
   transition: transform 150ms ease-in-out;
   font-size: 20px;
+  min-height: 400px;
 }
 
 .course-banner {
@@ -664,4 +665,38 @@ a.dropdown-name:hover {
 .signup-btn {
   margin-top: 40px;
   font-size: 30px;
+}
+
+.category-page h1 {
+  font-size: 50px;
+  margin-left: 20px;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 30px;
+}
+
+.second-category-courses {
+  display: flex;
+  flex-direction: row;
+}
+
+.category-card h2 {
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.category-page .seconds {
+  margin-top: 60px;
+}
+
+.category-card {
+  padding-bottom: 20px;
+}
+
+.seconds .carousel {
+  padding: 40px 0px;
 }
