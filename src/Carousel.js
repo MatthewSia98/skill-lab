@@ -3,11 +3,18 @@ import rightArrow from './icons/right-arrow.jpg';
 
 function Carousel(props) {    
     const shift = 100;
+    let first = props.first;
+    let second = props.second;
+    if (first === undefined) first = ''
+    if (second === undefined) second = ''
+
     function moveCarousel (event) {
         event.preventDefault();
         const clicked = event.target.closest(".carousel-button");
-        //console.log(".courses." + props.first.replace(/\s/g, '') + "." + props.second.replace(/\s/g, '') + " " + ".course-card");
-        const courseCards = [...document.querySelectorAll(".courses." + props.first.replace(/\s/g, '') + "." + props.second.replace(/\s/g, '') + " " + ".course-card")];
+
+        let courseCards;
+        if (first === '') courseCards = [...document.querySelectorAll(".courses .course-card")];
+        else courseCards = [...document.querySelectorAll(".courses." + first.replace(/\s/g, '') + "." + second.replace(/\s/g, '') + " " + ".course-card")];
         const coursesWidth = document.querySelector(".courses").clientWidth;
         const marginPercentage = 20 * (courseCards.length - 1) / coursesWidth * 100;
         const ncards = coursesWidth / (courseCards[0].clientWidth + 40);
@@ -49,13 +56,6 @@ function Carousel(props) {
             })
         }
     }
-    
-    let first;
-    let second;
-    first = props.first;
-    second = props.second;
-    if (props.first === undefined) first = ''
-    if (props.second === undefined) second = ''
 
     return (
         <div className={"carousel " + first.replace(/\s/g, '') + " " +  second.replace(/\s/g, '')} style={props.style}>
