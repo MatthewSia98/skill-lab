@@ -49,11 +49,18 @@ function Carousel(props) {
             })
         }
     }
+    
+    let first;
+    let second;
+    first = props.first;
+    second = props.second;
+    if (props.first === undefined) first = ''
+    if (props.second === undefined) second = ''
 
     return (
-        <div className={"carousel " + props.first.replace(/\s/g, '') + " " +  props.second.replace(/\s/g, '')} style={props.style}>
+        <div className={"carousel " + first.replace(/\s/g, '') + " " +  second.replace(/\s/g, '')} style={props.style}>
             <button className="carousel-button left"><img className="carousel-arrow" src={leftArrow} alt="left arrow" onClick={moveCarousel} /></button>
-            <div className={"courses " + props.first.replace(/\s/g, '') + " " + props.second.replace(/\s/g, '')}>
+            <div className={"courses " + first.replace(/\s/g, '') + " " + second.replace(/\s/g, '')}>
                 {props.items}
             </div>
             <button className="carousel-button right"><img className="carousel-arrow" src={rightArrow} alt="right arrow" onClick={moveCarousel} /></button>
