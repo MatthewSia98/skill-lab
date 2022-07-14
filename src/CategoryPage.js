@@ -1,4 +1,4 @@
-import { Link, useRouteMatch, useHistory, useLocation, useParams } from 'react-router-dom'
+import { Link, useRouteMatch } from 'react-router-dom'
 import CategoryCard from './CategoryCard'
 import CourseCard from './CourseCard'
 import Carousel from './Carousel'

@@ -1,13 +1,17 @@
+import { useRouteMatch } from 'react-router-dom'
 import InstructionStep from "./InstructionStep";
 import CourseReview from "./CourseReview";
 
-function Course() {
+function Course(props) {
+    const params = useRouteMatch().params;
+    const name = params['name'];
+
     return (
         <div className="course-page">
             <div className="course-main-banner">
-                <img src={require("./images/making-your-first-web-app.png")} alt="course preview" />
+                <img src={require("./images/what-is-web-development.png")} alt="course preview" />
                 <div className="course-main-info">
-                    <h1>Making your first web app</h1>
+                    <h1>{name}</h1>
                     <p>Posted on July 21, 2021</p>
                     <a href="https://www.freecodecamp.org/" target="_">freeCodeCamp</a>
                     <div className="course-statistics">

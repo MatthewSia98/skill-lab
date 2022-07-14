@@ -151,7 +151,7 @@ function DropdownOption(props) {
     } else {
         return (
             <div className="dropdown-option" onMouseOver={handleDropdown(props.col)}>
-                <Link className="dropdown-name" to="/course">{props.name}</Link>
+                <Link className="dropdown-name" to={"/course/" + props.name}>{props.name}</Link>
             </div>
         );
     }

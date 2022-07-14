@@ -14,6 +14,7 @@ function Carousel(props) {
 
         let courseCards;
         if (first === '') courseCards = [...document.querySelectorAll(".courses .course-card")];
+        // eslint-disable-next-line
         else courseCards = [...document.querySelectorAll(".courses." + first.replace(/\s/g, '') + "." + second.replace(/\s/g, '') + " " + ".course-card")];
         const coursesWidth = document.querySelector(".courses").clientWidth;
         const marginPercentage = 20 * (courseCards.length - 1) / coursesWidth * 100;

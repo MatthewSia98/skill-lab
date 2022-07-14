@@ -29,7 +29,7 @@ function Navbar() {
             </div>
             <CategoryDropdown />
             <Searchbar />
-            <Link className="right-links" to="/course">Online Degrees</Link>
+            <Link className="right-links" to="/online-degrees">Online Degrees</Link>
             <a className="right-links" href="https://www.gofundme.com/en-ca" target="_">Donate</a>
             <Link className="login" to="/login"><button id="nav-login" className="light-button">Log In</button></Link>
         </nav> 

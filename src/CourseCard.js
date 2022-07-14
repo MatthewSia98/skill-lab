@@ -5,7 +5,7 @@ function CourseCard(props) {
     return (
         <div className={"course-card " + props.first + " " + props.second}>
             <div className="course-banner">
-                <Link to="/course"><img className="course-preview" src={ require(`${props.path}`) } alt="course preview"/></Link>
+                <Link to={"/course/" + props.name}><img className="course-preview" src={ require(`${props.path}`) } alt="course preview"/></Link>
             </div>
             <div className="course-info">
                 <h4>{ props.name }</h4>
