@@ -1,4 +1,6 @@
-function ExploreTab() {
+import { items } from './App';
+
+function ExploreTab(props) {
     function selectTab(event) {
         const all = [...document.querySelectorAll(".unselected-tab")];
         all.forEach((e) => {e.className = "unselected-tab"});
@@ -7,17 +9,29 @@ function ExploreTab() {
         if (active) active.className = "unselected-tab";
 
         event.target.className = "selected-tab";
+
+        const carousels = [...document.querySelectorAll(".carousel")];
+        for (let i = 0; i < carousels.length; i++) {
+            const carousel = carousels[i];
+            if (carousel.className.includes(event.target.textContent.replace(/\s/g, ''))) {
+                carousel.style.display = "flex";
+            } else {
+                carousel.style.display = "none";
+            }
+        }
+    }
+
+    const categories = props.categories;
+    const tabs = [];
+    for (let i = 0; i < categories.length; i++) {
+        const currCategory = categories[i];
+        if (i === 0) tabs.push(<button className="selected-tab" onClick={selectTab} key={i}>{currCategory}</button>)
+        else tabs.push(<button className="unselected-tab" onClick={selectTab} key={i}>{currCategory}</button>);
     }
 
     return (
         <div className="tabs">
-            <button className="selected-tab" onClick={ selectTab }>Web Development</button>
-            <button className="unselected-tab" onClick={ selectTab }>Data Science</button>
-            <button className="unselected-tab" onClick={ selectTab }>Photography</button>
-            <button className="unselected-tab" onClick={ selectTab }>Business</button>
-            <button className="unselected-tab" onClick={ selectTab }>Drawing</button>
-            <button className="unselected-tab" onClick={ selectTab }>Music Production</button>
-            <button className="unselected-tab" onClick={ selectTab }>Painting</button>
+            {tabs}
         </div>
     );
 }

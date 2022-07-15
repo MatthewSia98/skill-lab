@@ -12,11 +12,13 @@ function Carousel(props) {
         event.preventDefault();
         const clicked = event.target.closest(".carousel-button");
 
-        let courseCards;
-        if (first === '') courseCards = [...document.querySelectorAll(".courses .course-card")];
+        //if (first === '') courseCards = [...document.querySelectorAll(".courses .course-card")];
         // eslint-disable-next-line
-        else courseCards = [...document.querySelectorAll(".courses." + first.replace(/\s/g, '') + "." + second.replace(/\s/g, '') + " " + ".course-card")];
-        const coursesWidth = document.querySelector(".courses").clientWidth;
+        //else 
+        //console.log(`carousel.${props.second.replace(/[&\s]/g, '')} .course-card`);
+        const courseCards = [...document.querySelectorAll(`.carousel.${props.second.replace(/[&\s]/g, '')} .course-card`)];
+        //console.log(courseCards);
+        const coursesWidth = document.querySelector(`.courses.${props.second.replace(/[&\s]/g, '')}`).clientWidth;
         const marginPercentage = 20 * (courseCards.length - 1) / coursesWidth * 100;
         const ncards = coursesWidth / (courseCards[0].clientWidth + 40);
 
@@ -41,6 +43,7 @@ function Carousel(props) {
         } else if (clicked.matches(".carousel-button.right")) {
             courseCards.forEach((card) => {
                 const transform = card.style.getPropertyValue("transform");
+                //console.log(transform);
                 let curr = parseInt(transform.substr(11,).slice(0, -2));
 
                 if (isNaN(parseInt(curr))) {
@@ -48,7 +51,7 @@ function Carousel(props) {
                 } else {
                     curr = parseInt(curr);
                 }
-
+                //console.log(curr)
                 if (curr <= -(courseCards.length - 1) * (shift + marginPercentage)) {
                     card.style.transform = "translateX(0%)";
                 } else {
@@ -59,9 +62,9 @@ function Carousel(props) {
     }
 
     return (
-        <div className={"carousel " + first.replace(/\s/g, '') + " " +  second.replace(/\s/g, '')} style={props.style}>
+        <div className={"carousel " +  second.replace(/[&\s]/g, '')} style={props.style}>
             <button className="carousel-button left"><img className="carousel-arrow" src={leftArrow} alt="left arrow" onClick={moveCarousel} /></button>
-            <div className={"courses " + first.replace(/\s/g, '') + " " + second.replace(/\s/g, '')}>
+            <div className={"courses " + second.replace(/[&\s]/g, '')}>
                 {props.items}
             </div>
             <button className="carousel-button right"><img className="carousel-arrow" src={rightArrow} alt="right arrow" onClick={moveCarousel} /></button>

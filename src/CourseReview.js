@@ -1,7 +1,7 @@
 import ReviewCard from "./ReviewCard";
 import ReviewBar from "./ReviewBar";
 
-function CourseReview() {
+function CourseReview(props) {
     function searchReviews(event) {
         const searchbar = document.querySelector(".review-input")
 
@@ -21,12 +21,12 @@ function CourseReview() {
                     </div>
                     <p className="course-nreviews">1337 Ratings</p>
                 </div>
-                <div className="review-bars">
-                    <ReviewBar nstar="5" percentage="75" />
-                    <ReviewBar nstar="4" percentage="15" />
-                    <ReviewBar nstar="3" percentage="7" />
-                    <ReviewBar nstar="2" percentage="2" />
-                    <ReviewBar nstar="1" percentage="1" />
+                <div className="review-bars"> 
+                    <ReviewBar nstar="5" percentage="75" course={props.name} />
+                    <ReviewBar nstar="4" percentage="15" course={props.name} />
+                    <ReviewBar nstar="3" percentage="7" course={props.name} />
+                    <ReviewBar nstar="2" percentage="2" course={props.name} />
+                    <ReviewBar nstar="1" percentage="1" course={props.name} />
                 </div>
             </div>
             <div className="course-review-content">

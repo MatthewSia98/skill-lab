@@ -1,15 +1,43 @@
-import { useRouteMatch } from 'react-router-dom'
+import { Link, useRouteMatch } from 'react-router-dom';
 import InstructionStep from "./InstructionStep";
 import CourseReview from "./CourseReview";
+import { imagepaths, videolinks } from './App';
+import * as Scroll from 'react-scroll';
+import { scroller } from "react-scroll";
+import { useEffect } from 'react';
 
 function Course(props) {
+    function goToReviews(e) {
+        console.log('go to reviews')
+        e.preventDefault();
+        scroller.scrollTo("course-review", {
+            duration: 800,
+            delay: 0,
+            smooth: "easeInOutQuart",
+        })
+    }
+
     const params = useRouteMatch().params;
     const name = params['name'];
+
+    let imgpath;
+    let videolink; 
+    if (name in imagepaths) {
+        imgpath = imagepaths[name];
+    } else {
+        imgpath = 'placeholder.png';
+    }
+
+    if (name in videolinks) {
+        videolink = videolinks[name]; 
+    } else {
+        videolink = 'http://www.youtube.com/embed/unknown';
+    }
 
     return (
         <div className="course-page">
             <div className="course-main-banner">
-                <img src={require("./images/what-is-web-development.png")} alt="course preview" />
+                <img src={require(`./images/${imgpath}`)} alt="course preview" />
                 <div className="course-main-info">
                     <h1>{name}</h1>
                     <p>Posted on July 21, 2021</p>
@@ -18,10 +46,10 @@ function Course(props) {
                         <div className="course-main-rating">
                             <p>5.0</p>
                             <img className="course-main-stars" src={require("./icons/5stars.PNG")} alt="stars" />
-                            <p className="course-main-nreviews"><a href="#reviews">(1,337 Reviews)</a></p>
+                            <p className="course-main-nreviews"><button onClick={goToReviews}>(1,337 Reviews)</button></p>
                         </div>
                     </div>
-                    <p>In this course, you will learn how to build your first web application using HTML, Sass, and Javascript</p>
+                    <p>{`In this course, you will learn about ${name}`}</p>
 
                     <div className="course-pricing">
                         <button className="dark-button pricing">FREE</button>
@@ -29,15 +57,15 @@ function Course(props) {
                 </div>
             </div>
             <div className="course-video">
-                <iframe width="1000" height="500" src="https://www.youtube.com/embed/y51Cv4wnsPw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe width="1000" height="500" src={videolink} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
             <div className="course-instructions">
-                <InstructionStep name="Installing Software" instruction={["You can download Sass ", <a href="https://sass-lang.com/" target="_">here</a>, "."]} />
-                <InstructionStep name="HTML" instruction={["You can download Sass ", <a href="https://sass-lang.com/" target="_">here</a>, "."]} />
-                <InstructionStep name="Sass" instruction={["You can download Sass ", <a href="https://sass-lang.com/" target="_">here</a>, "."]} />
-                <InstructionStep name="JavaScript" instruction={["You can download Sass ", <a href="https://sass-lang.com/" target="_">here</a>, "."]} />
+                <InstructionStep name="Instruction 1" instruction="This is Instruction 1" key={1} />
+                <InstructionStep name="Instruction 2" instruction="This is Instruction 2" key={2} />
+                <InstructionStep name="Instruction 3" instruction="This is Instruction 3" key={3} />
+                <InstructionStep name="Instruction 4" instruction="This is Instruction 4" key={4} />
             </div>
-            <CourseReview />
+            <CourseReview name={name}/>
         </div>
     );
 }

@@ -90,8 +90,6 @@ function DropdownMenu(props) {
                 <DropdownOption col="3" name="Kotlin" /> 
 
                 <DropdownOption col="3" name="Java" /> 
-                <DropdownOption col="3" name="C#" />
-                <DropdownOption col="3" name="React" /> 
                 <DropdownOption col="3" name="C++" />
                 <DropdownOption col="3" name="Go" />
                 <DropdownOption col="3" name="C" />
@@ -187,7 +185,6 @@ function DropdownMenu(props) {
                 <DropdownOption col="3" name="Voice-Over" /> 
                 <DropdownOption col="3" name="Quran" /> 
                 <DropdownOption col="3" name="Yoga" /> 
-                <DropdownOption col="3" name="Breathing Techniques" /> 
                 <DropdownOption col="3" name="Blues Guitar" /> 
                 <DropdownOption col="3" name="DJ" /> 
                 <DropdownOption col="3" name="Reading Music" /> 
@@ -203,7 +200,6 @@ function DropdownMenu(props) {
                 <DropdownOption col="3" name="Qi Gong" />
                 <DropdownOption col="3" name="Reiki" />
                 <DropdownOption col="3" name="Breathing Techniques" />
-                <DropdownOption col="3" name="Yoga" />
                 <DropdownOption col="3" name="Energy Healing" />
                 <DropdownOption col="3" name="Astral Projection" />
                 <DropdownOption col="3" name="First Aid" />
@@ -239,7 +235,6 @@ function DropdownMenu(props) {
                 <DropdownOption col="3" name="Face Yoga" />
                 <DropdownOption col="3" name="Parental Yoga" />
                 <DropdownOption col="3" name="Kundalini" />
-                <DropdownOption col="3" name="Teacher Training" />
                 <DropdownOption col="3" name="Nutrition" />
                 <DropdownOption col="3" name="Dieting" />
                 <DropdownOption col="3" name="Health Coaching" />

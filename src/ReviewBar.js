@@ -1,9 +1,11 @@
+import { Link } from 'react-router-dom';
+
 function ReviewBar(props) {
     return (
         <div className="review-bar">
-            <p><a href="#reviews">{props.nstar} star</a></p>
-            <a href="#reviews"><img className="review-bar-icon" src={require("./icons/" + props.percentage + "-bar.PNG")} alt="review bar" /></a>
-            <p className="review-percentage"><a href="#reviews">{props.percentage}%</a></p>
+            <p><Link to={`#reviews`}>{props.nstar} star</Link></p>
+            <Link to={`#reviews`}><img className="review-bar-icon" src={require("./icons/" + props.percentage + "-bar.PNG")} alt="review bar" /></Link>
+            <p className="review-percentage"><Link to={`#reviews`}>{props.percentage}%</Link></p>
         </div>
     );
 }

@@ -361,6 +361,15 @@ a.dropdown-name:hover {
     margin-right: 30px;
 }
 
+.course-statistics button {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+  font-size: 20px;
+}
+
 .course-page {
   display: flex;
   flex-direction: column;
@@ -438,6 +447,7 @@ a.dropdown-name:hover {
   justify-content: flex-flex-start;
   font-size: 30px;
   width: 30%;
+  overflow: hidden;
 }
 
 .course-review-content {
@@ -445,6 +455,7 @@ a.dropdown-name:hover {
   flex-direction: column;
   width: 70%;
   margin-bottom: 100px;
+  overflow: hidden;
 }
 
 .review-searchbar {
@@ -521,6 +532,7 @@ a.dropdown-name:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
+  overflow: hidden;
 }
 
 .course-review-stars {
@@ -545,6 +557,7 @@ a.dropdown-name:hover {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  overflow: hidden;
 }
 
 .review-bar-icon {
