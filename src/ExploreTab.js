@@ -1,5 +1,3 @@
-import { items } from './App';
-
 function ExploreTab(props) {
     function selectTab(event) {
         const all = [...document.querySelectorAll(".unselected-tab")];

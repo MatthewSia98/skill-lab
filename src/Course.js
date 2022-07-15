@@ -1,20 +1,19 @@
-import { Link, useRouteMatch } from 'react-router-dom';
+import { useRouteMatch } from 'react-router-dom';
 import InstructionStep from "./InstructionStep";
 import CourseReview from "./CourseReview";
 import { imagepaths, videolinks } from './App';
-import * as Scroll from 'react-scroll';
 import { scroller } from "react-scroll";
-import { useEffect } from 'react';
 
 function Course(props) {
-    function goToReviews(e) {
-        console.log('go to reviews')
-        e.preventDefault();
+    function goToReviews(event) {
+        event.preventDefault();
         scroller.scrollTo("course-review", {
             duration: 800,
             delay: 0,
             smooth: "easeInOutQuart",
         })
+        
+        event.target.style.color = 'purple';
     }
 
     const params = useRouteMatch().params;
