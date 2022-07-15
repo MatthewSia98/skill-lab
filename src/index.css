@@ -352,6 +352,10 @@ a.dropdown-name:hover {
   align-self: flex-start;
 }
 
+.course-pricing button {
+  cursor: default;
+}
+
 .course-statistics {
   display: flex;
   flex-direction: row;
