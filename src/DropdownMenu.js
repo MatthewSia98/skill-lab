@@ -14,8 +14,6 @@ function DropdownMenu(props) {
                 <DropdownOption col="1" name="Photography & Video" arrow />
                 <DropdownOption col="1" name="Music" arrow />
                 <DropdownOption col="1" name="Finance & Accounting" arrow />
-                <DropdownOption col="1" name="IT & Software" arrow />
-                <DropdownOption col="1" name="Health & Fitness" arrow />
             </div>
             <div className="dropdown-column two">
                 <DropdownOption col="2" name="Web Development" arrow />

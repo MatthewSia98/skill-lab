@@ -26,7 +26,7 @@ function Course(props) {
     } else {
         imgpath = 'placeholder.png';
     }
-
+    console.log(imgpath)
     if (name in videolinks) {
         videolink = videolinks[name]; 
     } else {

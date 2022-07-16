@@ -144,7 +144,37 @@ export const videolinks = {
   'Music Production': 'https://www.youtube.com/embed/x7uQReA6o8M',
   'GarageBand': 'https://www.youtube.com/embed/RpOfou3K-L8',
   'ProTools': 'https://www.youtube.com/embed/3yWkmX95J5U',
-  'Cubase': 'https://www.youtube.com/embed/nGneJZFMFdc'
+  'Cubase': 'https://www.youtube.com/embed/nGneJZFMFdc',
+  'Bookkeeping': 'https://www.youtube.com/embed/i8RIh04AaD8',
+  'Financial Accounting': 'https://www.youtube.com/embed/Rpa_UAciIeU',
+  'QuickBooks Online': 'https://www.youtube.com/embed/jOtsT91SZ2A',
+  'IFRS': 'https://www.youtube.com/embed/tWiEeOzGL2c',
+  'QuickBooks': 'https://www.youtube.com/embed/-K357CmF0Xk',
+  'SAP FICO': 'https://www.youtube.com/embed/jXVveOaLwVs',
+  'Cryptocurrency': 'https://www.youtube.com/embed/dgjZ2fHg4y4',
+  'NFT (Non-Fungible Tokens)': 'https://www.youtube.com/embed/tBMk1iZa85Y',
+  'Blockchain': 'https://www.youtube.com/embed/M576WGiDBdQ',
+  'Bitcoin': 'https://www.youtube.com/embed/EihUP3Yq8Gs',
+  'Binance': 'https://www.youtube.com/embed/DBkvdlAlNDY',
+  'Day Trading': 'https://www.youtube.com/embed/EMc2b3_YV7s',
+  'Online Arbitrage': 'https://www.youtube.com/embed/OMKmZFR-0JU',
+  'Algorithmic Trading': 'https://www.youtube.com/embed/xfzGZB4HhEE',
+  'Stock Trading': 'https://www.youtube.com/embed/y7iVTTH5tOA',
+  'Investing': 'https://www.youtube.com/embed/giGcuofIYis',
+  'Forex': 'https://www.youtube.com/embed/Xb4KWuHmHBQ',
+  'Technical Analysis': 'https://www.youtube.com/embed/eynxyoKgpng',
+  'Options Trading': 'https://www.youtube.com/embed/7PM4rNDr4oI',
+  'Financial Markets': 'https://www.youtube.com/embed/UOwi7MBSfhk',
+  'Financial Trading': 'https://www.youtube.com/embed/4jCaV7eMP78',
+  'Xero': 'https://www.youtube.com/embed/xvOJDfsrHDQ',
+  'QuickBooks Pro': 'https://www.youtube.com/embed/uJXYv3M775c',
+  'Excel Analytics': 'https://www.youtube.com/embed/OOWAk2aLEfk',
+  'Financial Modeling': 'https://www.youtube.com/embed/RghUyVCSdM4',
+  'Tax Preparation': 'https://www.youtube.com/embed/EJpTwf9b82M',
+  'Goods and Services Tax': 'https://www.youtube.com/embed/auPWG6yyP24',
+  'Value Added Tax (VAT)': 'https://www.youtube.com/embed/a6RB4rIxWqI',
+  'Home Business': 'https://www.youtube.com/embed/1E3WDjLkfgU',
+  'Business Strategy': 'https://www.youtube.com/embed/dfYtftMEmIs'
 }
 
 export const imagepaths = {
@@ -284,7 +314,37 @@ export const imagepaths = {
   'Music Production': 'MusicProduction.jpg',
   'GarageBand': 'GarageBand.jpg',
   'ProTools': 'ProTools.jpg',
-  'Cubase': 'Cubase.png'
+  'Cubase': 'Cubase.png',
+  'Bookkeeping': 'Bookkeeping.webp',
+  'Financial Accounting': 'FinancialAccounting.jpg',
+  'QuickBooks Online': 'QuickBooksOnline.png',
+  'IFRS': 'IFRS.jpg',
+  'QuickBooks': 'QuickBooks.jpg',
+  'SAP FICO': 'SAPFICO.png',
+  'Cryptocurrency': 'Cryptocurrency.webp',
+  'NFT (Non-Fungible Tokens)': 'NFT(Non-FungibleTokens).jpg',
+  'Blockchain': 'Blockchain.webp',
+  'Bitcoin': 'Bitcoin.jpg',
+  'Binance': 'Binance.png',
+  'Day Trading': 'DayTrading.png',
+  'Online Arbitrage': 'OnlineArbitrage.jpg',
+  'Algorithmic Trading': 'AlgorithmicTrading.jpg',
+  'Stock Trading': 'StockTrading.jpg',
+  'Investing': 'Investing.jpg',
+  'Forex': 'Forex.jpg',
+  'Technical Analysis': 'TechnicalAnalysis.jpg',
+  'Options Trading': 'OptionsTrading.jpg',
+  'Financial Markets': 'FinancialMarkets.jpg',
+  'Financial Trading': 'FinancialTrading.webp',
+  'Xero': 'Xero.jpg',
+  'QuickBooks Pro': 'QuickBooksPro.jpg',
+  'Excel Analytics': 'ExcelAnalytics.png',
+  'Financial Modeling': 'FinancialModeling.jpg',
+  'Tax Preparation': 'TaxPreparation.png',
+  'Goods and Services Tax': 'GoodsandServicesTax.jpg',
+  'Value Added Tax (VAT)': 'ValueAddedTax(VAT).webp',
+  'Home Business': 'HomeBusiness.png',
+  'Business Strategy': 'BusinessStrategy.jfif'
 };
 
 export const items = {
@@ -309,16 +369,15 @@ export const items = {
             "Music Technique": ["Fingerstyle Guitar", "Blues Guitar", "Music Composition", "DJ", "Music Theory", "Reading Music", "Guitar", "Rock Guitar", "Piano"],
             "Music Software": ["FL Studio", "Ableton Live", "Logic Pro", "Music Production", "GarageBand", "ProTools", "Cubase", "DJ", "Music Mixing"]
            },
-  "Finance & Accounting": {"Accounting & Bookkeeping": ["Accounting", "Bookkeeping", "Financial Accounting", "Finance Fundamentals", "QuickBooks Online", "Startup", "IFRS", "QuickBooks", "SAP FICO"],
-                           "Compliance": ["Anti-Money Laundering", "Sarbanes-Oxley (SOX)", "Internal Controls", "CAMS Certification", "Internal Auditing", "Risk Management", "Enterprise Risk Management (ERM)", "Trade and Commerce", "Fraud Analytics"],
-                           "Cryptocurrency & Blockchain": ["Cryptocurrency", "NFT (Non-Fungible Tokens)", "Blockchain", "Bitcoin", "Metaverse", "Binance", "Day Trading", "Online Arbitrage", "Algorithmic Trading"],
+  "Finance & Accounting": {"Accounting & Bookkeeping": ["Accounting", "Bookkeeping", "Financial Accounting", "Finance Fundamentals", "QuickBooks Online", "IFRS", "QuickBooks", "SAP FICO"],
+                           "Cryptocurrency & Blockchain": ["Cryptocurrency", "NFT (Non-Fungible Tokens)", "Blockchain", "Bitcoin", "Binance", "Day Trading", "Online Arbitrage", "Algorithmic Trading"],
                            "Economics": ["Macroeconomics", "Microeconomics", "Stata", "Econometrics", "Finance Fundamentals", "Global Economics", "Political Science", "Regression Analysis"],
                            "Finance": ["Personal Finance", "Investment Banking", "Finance Fundamentals", "CFA", "Financial Management", "Corporate Finance", "Financial Analysis", "Banking", "Accounting"],
                            "Investing & Trading": ["Stock Trading", "Investing", "Forex", "Technical Analysis", "Algorithmic Trading", "Options Trading", "Day Trading", "Financial Markets", "Financial Trading"],
-                           "Money Management Tools": ["QuickBooks Online", "QuickBooks", "SAP FICO", "Excel", "Xero", "QuickBooks Pro", "Finanical Analysis", "Excel Analytics", "Financial Modeling"],
-                           "Taxes": ["Tax Preparation", "Accounting", "Goods and Services Tax", "Value Added Tax (VAT)", "QuickBooks Online", "Financial Accounting", "Law", "Home Business", "Business Strategy"]
-                          },
-  "IT & Software": {"IT Certifications": ["AWS Certification", "Microsoft Certification", "AWS Certified Solutions Architect - Associate", "AWS Certified Cloud Practitioner", "CompTIA A+", "Amazon AWS", "Cisco CCNA", "CompTIA Security+", "Microsoft AZ-900"],
+                           "Money Management Tools": ["QuickBooks Online", "QuickBooks", "SAP FICO", "Xero", "QuickBooks Pro", "Financial Analysis", "Excel Analytics", "Financial Modeling"],
+                           "Taxes": ["Tax Preparation", "Accounting", "Goods and Services Tax", "Value Added Tax (VAT)", "QuickBooks Online", "Financial Accounting", "Home Business", "Business Strategy"]
+                          }//,
+  /*"IT & Software": {"IT Certifications": ["AWS Certification", "Microsoft Certification", "AWS Certified Solutions Architect - Associate", "AWS Certified Cloud Practitioner", "CompTIA A+", "Amazon AWS", "Cisco CCNA", "CompTIA Security+", "Microsoft AZ-900"],
                     "Network & Security": ["Ethical Hacking", "Cyber Security", "Network Security", "Penetration Testing", "CompTIA Network+", "Kubernetes", "IT Networking Fundamentals", "Terraform", "Wireshark"],
                     "Hardware": ["PLC", "Arduino", "Electronics", "Microcontroller", "Embedded Systems", "Raspberry Pi", "Embedded C", "FPGA", "Cell Phone Repair"],
                     "Operating Systems & Servers": ["Linux", "Linux Administration", "Windows Server", "Shell Scripting", "Active Directory", "PowerShell", "Linux Command Line", "VMware Vsphere", "LPIC-1: Linux Administrator"]
@@ -332,7 +391,7 @@ export const items = {
                        "Martial Arts & Self Defense": ["Krav Maga", "Self-Defense", "Martial Arts", "Boxing", "Close Combat", "Tai Chi", "Brazilian Jiu-Jitsu", "Wing Chun", "Muay Thai"],
                        "Safety & First Aid": ["First Aid", "Herbalism", "Workplace Health and Safety", "Fire Safety", "Survival Skills", "OSHA", "Grief Healing", "Health", "Kinesiology Taping"],
                        "Meditation": ["Sound Therapy", "Mindfulness", "Qi Gong", "Reiki", "Breathing Techniques", "Yoga", "Energy Healing", "Astral Projection"]
-                      }
+                      }*/
 };
 
 function App() {

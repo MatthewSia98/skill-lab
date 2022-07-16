@@ -5,7 +5,7 @@ import CourseCard from './CourseCard';
 import { items } from './App';
 import React from 'react';
 
-export const homeCategories = ['Web Development', 'Data Science', 'Digital Photography', 'Finance', 'Fitness', 'Music Production', 'Economics'];
+export const homeCategories = ['Web Development', 'Data Science', 'Digital Photography', 'Finance', 'Instruments', 'Music Production', 'Economics'];
 
 function Home() {
     const carousels = [];
