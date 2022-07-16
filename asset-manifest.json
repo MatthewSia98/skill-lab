@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/skill-lab/static/css/main.f7c81fe0.css",
-    "main.js": "/skill-lab/static/js/main.416c543e.js",
+    "main.js": "/skill-lab/static/js/main.a2b447dc.js",
     "static/media/PhotoshopRetouching.jpg": "/skill-lab/static/media/PhotoshopRetouching.9614a44d7c085993b2d0.jpg",
     "static/media/MobileGameDevelopment.png": "/skill-lab/static/media/MobileGameDevelopment.011e1f81efb53b49f122.png",
     "static/media/ReactNative.jpg": "/skill-lab/static/media/ReactNative.f3e964a434ef76a83392.jpg",
@@ -187,10 +187,10 @@
     "static/media/7-bar.PNG": "/skill-lab/static/media/7-bar.3249d394a2f954348f45.PNG",
     "index.html": "/skill-lab/index.html",
     "main.f7c81fe0.css.map": "/skill-lab/static/css/main.f7c81fe0.css.map",
-    "main.416c543e.js.map": "/skill-lab/static/js/main.416c543e.js.map"
+    "main.a2b447dc.js.map": "/skill-lab/static/js/main.a2b447dc.js.map"
   },
   "entrypoints": [
     "static/css/main.f7c81fe0.css",
-    "static/js/main.416c543e.js"
+    "static/js/main.a2b447dc.js"
   ]
 }
