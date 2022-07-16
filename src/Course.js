@@ -56,7 +56,7 @@ function Course(props) {
                 </div>
             </div>
             <div className="course-video">
-                <iframe width="1000" height="500" src={videolink} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <iframe width="75%" height="700" src={videolink} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
             <div className="course-instructions">
                 <InstructionStep name="Instruction 1" instruction="This is Instruction 1" key={1} />
