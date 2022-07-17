@@ -219,7 +219,8 @@ body {
   margin: 0px 20px;
   transition: transform 150ms ease-in-out;
   font-size: 20px;
-  min-width: 210px;
+  min-width: 250px;
+  max-width: 250px;
   min-height: 400px;
 }
 
