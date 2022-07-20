@@ -76,7 +76,6 @@ function Login() {
                 <p className="error" id="pwd-error">You entered a wrong password</p>
                 <input className="login-input password" type="text" placeholder="Password" onKeyPress={getCredential}></input>
                 <button id="login-btn" className="light-button" onClick={login}>Log In</button>
-                <Link className="forgot-password" to="/login">Forgot your password?</Link>
                 <p className="no-account">Don't have an account? <button target="popup" onClick={openSignUpWindow}>Sign up</button></p>
             </div>
         )
