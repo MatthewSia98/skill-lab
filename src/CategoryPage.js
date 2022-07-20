@@ -3,6 +3,7 @@ import CategoryCard from './CategoryCard';
 import CourseCard from './CourseCard';
 import Carousel from './Carousel';
 import { items } from './App';
+import CourseFilter from './CourseFilter';
 
 function CategoryPage() {
     const params = useRouteMatch().params;
@@ -24,7 +25,10 @@ function CategoryPage() {
 
         return (
             <div className="category-page">
-                <h1>{category}</h1>
+                <div className="category-page-header">
+                    <h1>{category}</h1>
+                    <CourseFilter />
+                </div>
                 <div className="seconds">{secondDivs}</div>
             </div>
         );
@@ -51,12 +55,15 @@ function CategoryPage() {
 
         return (
             <div className="category-page">
-                <div className="breadcrumb">
-                    <h1><Link to={'/category/1/' + selectedFirst}>{selectedFirst}</Link></h1> 
-                    <pre>  >  </pre>
-                    <h1>{category}</h1>
+                <div className="category-page-header">
+                    <div className="breadcrumb">
+                        <h1><Link to={'/category/1/' + selectedFirst}>{selectedFirst}</Link></h1> 
+                        <pre>  >  </pre>
+                        <h1>{category}</h1>
+                    </div>
+                    <CourseFilter />
                 </div>
-                <Carousel items={courseDivs} />
+                <Carousel items={courseDivs} second={category}/>
             </div>
         );
     }
