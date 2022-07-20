@@ -30,7 +30,7 @@ function CategoryPage(props) {
                 <Navbar language={language}/>
                 <div className="category-page-header">
                     <h1>{category}</h1>
-                    <CourseFilter />
+                    <CourseFilter language={language} />
                 </div>
                 <div className="seconds">{secondDivs}</div>
             </div>
