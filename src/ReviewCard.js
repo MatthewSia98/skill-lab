@@ -8,7 +8,7 @@ function ReviewCard(props) {
                         <h1>{props.name}</h1>
                     </div>
                     <div className="person-rating">
-                        <img className="person-stars" src={require("./icons/5stars.PNG")} alt="stars" />
+                        <img className="person-stars" src={require(`./icons/${props.rating}stars.PNG`)} alt="stars" />
                         <p className="person-summary">{props.summary}</p>
                     </div>
                     <div className="review-date">
