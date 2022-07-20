@@ -10,13 +10,12 @@ function Signup() {
         const email = document.querySelector("#email").value;
         const password = document.querySelector("#password").value;
         
+        localStorage.setItem("firstName", firstName);
+        localStorage.setItem("lastName", lastName);
         localStorage.setItem("email", email);
         localStorage.setItem("password", password);
 
         window.close();
-        const login = window.opener.document.querySelector("#nav-login");
-        //login.textContent = "Logged in";
-        //window.opener.console.log(firstName, lastName, email, password);
     }
 
     return (

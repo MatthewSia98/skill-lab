@@ -1,11 +1,6 @@
-import { Link } from 'react-router-dom';
-
 function Login() {
     function getCredential(event) {
         if (event.key === "Enter") {
-            const inputEmail = document.querySelector(".login-input.email").value;
-            const inputPassword = document.querySelector(".login-input.password").value;
-
             login();
         }
     }
