@@ -2,12 +2,14 @@ import Banner from './Banner';
 import ExploreTab from "./ExploreTab";
 import Carousel from "./Carousel";
 import CourseCard from './CourseCard';
+import Navbar from './Navbar';
 import { items } from './App';
 import React from 'react';
 
 export const homeCategories = ['Web Development', 'Data Science', 'Digital Photography', 'Finance', 'Instruments', 'Music Production', 'Economics'];
 
-function Home() {
+function Home(props) {
+    const language = props.language;
     const carousels = [];
     for (const first in items) {
         for (const second in items[first]) {
@@ -30,13 +32,16 @@ function Home() {
             }
         }
     }
+    const exploreHeader = (language === "English" || language === "Anglais")? "Start Exploring" : "Commencez à explorer";
+    const exploreText = (language === "English" || language === "Anglais")? "Browse some of our most popular courses this month" : "Parcourez certains de nos cours les plus populaires ce mois-ci";
 
     return (
         <div className="homepage">
-            <Banner />
+            <Navbar language={language}/>
+            <Banner language={props.language}/>
             <div className="explore-header">
-                <h1>Start Exploring</h1>
-                <p className="explore-description">Browse some of our most popular courses this month</p>
+                <h1>{exploreHeader}</h1>
+                <p className="explore-description">{exploreText}</p>
             </div>
             <ExploreTab categories={homeCategories} />
             {carousels}

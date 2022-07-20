@@ -2,10 +2,12 @@ import { Link, useRouteMatch } from 'react-router-dom';
 import CategoryCard from './CategoryCard';
 import CourseCard from './CourseCard';
 import Carousel from './Carousel';
+import Navbar from './Navbar';
 import { items } from './App';
 import CourseFilter from './CourseFilter';
 
-function CategoryPage() {
+function CategoryPage(props) {
+    const language = props.language;
     const params = useRouteMatch().params;
     const col = params['col'];
     const category = params['name'];
@@ -25,6 +27,7 @@ function CategoryPage() {
 
         return (
             <div className="category-page">
+                <Navbar language={language}/>
                 <div className="category-page-header">
                     <h1>{category}</h1>
                     <CourseFilter />
@@ -55,13 +58,14 @@ function CategoryPage() {
 
         return (
             <div className="category-page">
+                <Navbar language={language}/>
                 <div className="category-page-header">
                     <div className="breadcrumb">
                         <h1><Link to={'/category/1/' + selectedFirst}>{selectedFirst}</Link></h1> 
                         <pre>  >  </pre>
                         <h1>{category}</h1>
                     </div>
-                    <CourseFilter />
+                    <CourseFilter language={language}/>
                 </div>
                 <Carousel items={courseDivs} second={category}/>
             </div>

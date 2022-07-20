@@ -1,4 +1,7 @@
 function ReviewCard(props) {
+    const language = props.language;
+    const reviewed = (language === "English" || language === "Anglais")? "Reviewed on" : "Commenté le";
+
     return (
         <div className="review-card">
             <div className="review-top">
@@ -12,7 +15,7 @@ function ReviewCard(props) {
                         <p className="person-summary">{props.summary}</p>
                     </div>
                     <div className="review-date">
-                        <p>Reviewed on {props.date}</p>
+                        <p>{reviewed} {props.date}</p>
                     </div>
                 </div>
             </div>

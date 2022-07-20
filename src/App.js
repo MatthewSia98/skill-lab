@@ -1,10 +1,9 @@
-import Navbar from './Navbar';
 import Home from './Home';
 import Course from './Course';
 import Login from './Login';
 import Signup from './Signup';
 import CategoryPage from './CategoryPage';
-import OnlineDegrees from './OnlineDegrees';
+import { useState } from 'react';
 import { HashRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 
 export const videolinks = {
@@ -566,31 +565,33 @@ export const items = {
 };
 
 function App() {
+  const defaultLang = localStorage.getItem("language")
+  const [language, setLanguage] = useState((defaultLang === null)? "English" : defaultLang);
+  window.addEventListener("click", () => {
+      setLanguage(localStorage.getItem("language"));
+  })
+
   return (
     <Router>
       <div className="App">
-        <Navbar />
         <Switch>
           <Route exact path="/">
             <Redirect to="/home" />
           </Route>
           <Route path="/home">
-            <Home />
+            <Home language={language}/>
           </Route>
           <Route path="/course/:name">
-            <Course />
+            <Course language={language}/>
           </Route>
           <Route exact path="/category/:col/:name">
-            <CategoryPage />
-          </Route>
-          <Route path="/online-degrees">
-            <OnlineDegrees />
+            <CategoryPage language={language}/>
           </Route>
           <Route path="/login">
-            <Login />
+            <Login language={language}/>
           </Route>
           <Route path="/signup">
-            <Signup />
+            <Signup language={language}/>
           </Route>
         </Switch>
       </div>
