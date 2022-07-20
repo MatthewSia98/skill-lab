@@ -4,15 +4,18 @@ function Signup() {
     function signup(event) {
         window.opener.location.replace("/skill-lab/#/home");
         event.preventDefault();
-        /*
+        
         const firstName = document.querySelector("#first-name").value;
         const lastName = document.querySelector("#last-name").value;
         const email = document.querySelector("#email").value;
         const password = document.querySelector("#password").value;
-        */
+        
+        localStorage.setItem("email", email);
+        localStorage.setItem("password", password);
+
         window.close();
         const login = window.opener.document.querySelector("#nav-login");
-        login.textContent = "Logged in";
+        //login.textContent = "Logged in";
         //window.opener.console.log(firstName, lastName, email, password);
     }
 

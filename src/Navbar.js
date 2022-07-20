@@ -3,6 +3,10 @@ import Searchbar from './Searchbar'
 import { Link } from 'react-router-dom';
 
 function Navbar() {
+    let loggedInText = "Log In";
+
+    if (localStorage.getItem("loggedIn") === 'true') loggedInText = "Logged In"
+
     function showOne() {
         document.querySelector(".dropdown-column.one").style.display = "flex"
         document.querySelector(".dropdown-column.two").style.display = "none"
@@ -30,7 +34,7 @@ function Navbar() {
             <CategoryDropdown />
             <Searchbar />
             <a className="right-links" href="https://www.gofundme.com/en-ca" target="_">Donate</a>
-            <Link className="login" to="/login"><button id="nav-login" className="light-button">Log In</button></Link>
+            <Link className="login" to="/login"><button id="nav-login" className="light-button">{loggedInText}</button></Link>
         </nav> 
     );
 }
