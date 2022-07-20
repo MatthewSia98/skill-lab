@@ -214,9 +214,8 @@ body {
   margin: 0px 20px;
   transition: transform 150ms ease-in-out;
   font-size: 20px;
-  min-width: 250px;
-  max-width: 250px;
-  min-height: 400px;
+  width: 250px;
+  height: 400px;
 }
 
 .course-banner {
@@ -469,12 +468,6 @@ a.dropdown-name:hover {
   width: 70%;
   margin-bottom: 100px;
   overflow: hidden;
-}
-
-.course-review-content button {
-  width: 120px;
-  padding: 10px 0px;
-  margin-top: -20px;
 }
 
 .review-searchbar {
@@ -839,4 +832,14 @@ a.dropdown-name:hover {
   align-items: center;
   justify-content: space-around;
   width: 25%;
+}
+
+.submit-review {
+    background: #3366FF;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 150px;
+    padding: 10px 0px;
+    margin-top: -20px;
 }

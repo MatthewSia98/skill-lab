@@ -5,6 +5,8 @@ function Searchbar(props) {
     function searchCourse(event) {
         if (event.key === "Enter" || event.type === "click") {
             const search = document.querySelector(".search-input");
+            const msg = (language === "English" || language === "Anglais")? "Search is not yet implemented" : "La recherche n'est pas encore implémentée";
+            alert(msg);
             search.value = "";
         }
     }
