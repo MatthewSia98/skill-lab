@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/skill-lab/static/css/main.a3a77e04.css",
-    "main.js": "/skill-lab/static/js/main.a2b447dc.js",
+    "main.css": "/skill-lab/static/css/main.61298d2f.css",
+    "main.js": "/skill-lab/static/js/main.a9842703.js",
     "static/media/PhotoshopRetouching.jpg": "/skill-lab/static/media/PhotoshopRetouching.9614a44d7c085993b2d0.jpg",
     "static/media/MobileGameDevelopment.png": "/skill-lab/static/media/MobileGameDevelopment.011e1f81efb53b49f122.png",
     "static/media/ReactNative.jpg": "/skill-lab/static/media/ReactNative.f3e964a434ef76a83392.jpg",
@@ -140,8 +140,10 @@
     "static/media/google.png": "/skill-lab/static/media/google.0590aaf0fe36e23dcc8c.png",
     "static/media/AdobeLightroom.jpg": "/skill-lab/static/media/AdobeLightroom.cc7eb88e94644256b7ec.jpg",
     "static/media/CFA.webp": "/skill-lab/static/media/CFA.bcef6936f62c8459f1e9.webp",
+    "static/media/4stars.PNG": "/skill-lab/static/media/4stars.4e9141e6957f12c1d2a0.PNG",
     "static/media/GoogleFlutter.jpg": "/skill-lab/static/media/GoogleFlutter.71b2bbb2cf74a021b517.jpg",
     "static/media/GlobalEconomics.jpg": "/skill-lab/static/media/GlobalEconomics.63acbdebbeedce8e1220.jpg",
+    "static/media/3stars.PNG": "/skill-lab/static/media/3stars.647deb3905fb53b52a19.PNG",
     "static/media/learn-bootstrap.png": "/skill-lab/static/media/learn-bootstrap.6e97d94e2920ec598abd.png",
     "static/media/SQL.jpeg": "/skill-lab/static/media/SQL.79bbe56078ff551d47e8.jpeg",
     "static/media/Cinematography.jpg": "/skill-lab/static/media/Cinematography.254da6b6f76188786363.jpg",
@@ -149,6 +151,7 @@
     "static/media/RegressionAnalysis.jpg": "/skill-lab/static/media/RegressionAnalysis.f189a32faa950ab2b3ff.jpg",
     "static/media/ApacheKafka.jpg": "/skill-lab/static/media/ApacheKafka.d2bb0accba14a8343061.jpg",
     "static/media/AndroidDevelopment.jpg": "/skill-lab/static/media/AndroidDevelopment.066c3ddabcbd0e556308.jpg",
+    "static/media/2stars.PNG": "/skill-lab/static/media/2stars.717168524af29b4f47b1.PNG",
     "static/media/WeddingPhotography.jpg": "/skill-lab/static/media/WeddingPhotography.0e96aa4596592a823037.jpg",
     "static/media/Dart.jpg": "/skill-lab/static/media/Dart.589d52334d10f9e8a3e9.jpg",
     "static/media/GarageBand.jpg": "/skill-lab/static/media/GarageBand.4ebd0f4836294a148763.jpg",
@@ -156,6 +159,7 @@
     "static/media/TechnicalAnalysis.jpg": "/skill-lab/static/media/TechnicalAnalysis.c9739e3af72a6ad939a9.jpg",
     "static/media/QuickBooks.jpg": "/skill-lab/static/media/QuickBooks.13b2b0a8503bce11c3f8.jpg",
     "static/media/Banking.webp": "/skill-lab/static/media/Banking.6e6f5fd6232390c56973.webp",
+    "static/media/1stars.PNG": "/skill-lab/static/media/1stars.e6bee3ca64e878ab4438.PNG",
     "static/media/MongoDB.png": "/skill-lab/static/media/MongoDB.f9efb4cf07a7dc8a900d.png",
     "static/media/UnrealEngine.jpg": "/skill-lab/static/media/UnrealEngine.c1dedeac7c8278206a97.jpg",
     "static/media/Python.png": "/skill-lab/static/media/Python.76cc4125b43147968c0f.png",
@@ -186,11 +190,11 @@
     "static/media/2-bar.PNG": "/skill-lab/static/media/2-bar.5de407007e5c45189036.PNG",
     "static/media/7-bar.PNG": "/skill-lab/static/media/7-bar.3249d394a2f954348f45.PNG",
     "index.html": "/skill-lab/index.html",
-    "main.a3a77e04.css.map": "/skill-lab/static/css/main.a3a77e04.css.map",
-    "main.a2b447dc.js.map": "/skill-lab/static/js/main.a2b447dc.js.map"
+    "main.61298d2f.css.map": "/skill-lab/static/css/main.61298d2f.css.map",
+    "main.a9842703.js.map": "/skill-lab/static/js/main.a9842703.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3a77e04.css",
-    "static/js/main.a2b447dc.js"
+    "static/css/main.61298d2f.css",
+    "static/js/main.a9842703.js"
   ]
 }
