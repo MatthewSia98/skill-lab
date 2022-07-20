@@ -11,13 +11,7 @@ function Carousel(props) {
     function moveCarousel (event) {
         event.preventDefault();
         const clicked = event.target.closest(".carousel-button");
-
-        //if (first === '') courseCards = [...document.querySelectorAll(".courses .course-card")];
-        // eslint-disable-next-line
-        //else 
-        //console.log(`carousel.${props.second.replace(/[&\s]/g, '')} .course-card`);
         const courseCards = [...document.querySelectorAll(`.carousel.${props.second.replace(/[&\s]/g, '')} .course-card`)];
-        //console.log(courseCards);
         const coursesWidth = document.querySelector(`.courses.${props.second.replace(/[&\s]/g, '')}`).clientWidth;
         const marginPercentage = 20 * (courseCards.length - 1) / coursesWidth * 100;
         const ncards = coursesWidth / (courseCards[0].clientWidth + 40);
@@ -43,7 +37,6 @@ function Carousel(props) {
         } else if (clicked.matches(".carousel-button.right")) {
             courseCards.forEach((card) => {
                 const transform = card.style.getPropertyValue("transform");
-                //console.log(transform);
                 let curr = parseInt(transform.substr(11,).slice(0, -2));
 
                 if (isNaN(parseInt(curr))) {
@@ -51,7 +44,7 @@ function Carousel(props) {
                 } else {
                     curr = parseInt(curr);
                 }
-                //console.log(curr)
+
                 if (curr <= -(courseCards.length - 1) * (shift + marginPercentage)) {
                     card.style.transform = "translateX(0%)";
                 } else {

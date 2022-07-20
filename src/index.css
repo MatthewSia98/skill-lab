@@ -23,10 +23,6 @@ body {
   display: inline-block;
 }
 
-.categories {
-  color: white;
-}
-
 .searchbar {
   display: flex;
   flex-direction: row;
@@ -42,11 +38,11 @@ body {
   height: 100%;
   font-size: 20px;
 }
-
+/*
 .login {
   float: right; 
   margin-right: 20px;
-}
+}*/
 
 .light-button {
   border: 1px solid black;
@@ -259,7 +255,7 @@ body {
   left: 10px;
 }
 
-.dropdown-container {
+.dropdown-columns {
   display: flex;
   position: absolute;
   background: white;
@@ -267,17 +263,30 @@ body {
   height: 75vh;
 }
 
-.dropdown-columns {
-  display: flex;
-}
-
 .dropdown-column {
   display: none;
   flex-direction: column;
   justify-content: space-around;
-  border: 2px solid black;
   padding: 0px 10px;
   width: 300px;
+  z-index: 10;
+  border-top: 2px solid black;
+}
+
+.dropdown-column.one {
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.dropdown-column.two {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.dropdown-column.three {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
 }
 
 .dropdown-option {
@@ -750,6 +759,7 @@ a.dropdown-name:hover {
   flex-direction: column;
   align-items: flex-end;
   margin-right: 40px;
+  font-size: 20px;
 }
 
 .category-page-header {
@@ -760,10 +770,74 @@ a.dropdown-name:hover {
 
 .filter-choice {
   display: flex;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .filter-btn {
-  font-size: 15px;
+  font-size: 20px;
   margin-top: 10px;
+}
+
+.language-text {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.language-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.language-dropdown:hover .language-options {
+  display: flex;
+}
+
+.language-options {
+  z-index: 10;
+  background: white;
+  position: absolute;
+  margin-top: 60px;
+  display: none;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 100px;
+  height: 60px;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.language-dropdown button {
+  color: black;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.language-dropdown button:hover {
+  color: blue;
+}
+
+.left-nav {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categories {
+  color: white;
+  margin-right: 50px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 25%;
 }

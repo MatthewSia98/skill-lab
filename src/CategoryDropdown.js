@@ -1,6 +1,7 @@
 import DropdownMenu from './DropdownMenu';
 
 function CategoryDropdown() {
+    /*
     window.addEventListener("load", positionDropdown);
     window.addEventListener("resize", positionDropdown);
     window.addEventListener('DOMContentLoaded', positionDropdown);
@@ -15,11 +16,9 @@ function CategoryDropdown() {
         dropdown.style.left = `${categoriesRect.x}px`;
         dropdown.style.top = `${categoriesRect.bottom + 10}px`;
     }                               
-
+*/
     return (
-        <div className="dropdown-container">
             <DropdownMenu />
-        </div>
     );
 }
 

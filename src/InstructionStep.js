@@ -1,7 +1,7 @@
 function InstructionStep(props) {
     function toggleInstruction(event) {
         const clicked_instruction = event.target.parentNode.lastChild;
-        console.log(event.target);
+
         if (clicked_instruction.style.display === "block") {
             clicked_instruction.style.display = "none";
         } else {

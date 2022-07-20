@@ -10,7 +10,7 @@ function Login() {
         const inputPassword = document.querySelector(".login-input.password").value;
         const savedEmail = localStorage.getItem("email");
         const savedPassword = localStorage.getItem("password");
-        console.log(inputEmail === savedEmail)
+
         if (inputEmail === savedEmail && inputPassword === savedPassword) {
             localStorage.setItem("loggedIn", true);
             window.location.replace("/skill-lab");

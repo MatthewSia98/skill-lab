@@ -26,9 +26,9 @@ function DropdownOption(props) {
             }
         })
 
-        document.querySelector(".dropdown-column.one").style.display = "flex"
-        document.querySelector(".dropdown-column.two").style.display = "flex"
-        document.querySelector(".dropdown-column.three").style.display = "none"
+        document.querySelector(".dropdown-column.one").style.display = "flex";
+        document.querySelector(".dropdown-column.two").style.display = "flex";
+        document.querySelector(".dropdown-column.three").style.display = "none";
     }
       
     function showThree(event) {
@@ -46,7 +46,6 @@ function DropdownOption(props) {
         }
 
         const thirds = [...document.querySelectorAll(".dropdown-column.three .dropdown-option")]
-        //console.log(items[firstName][secondName])
         thirds.forEach((third) => {
             const a = third.children[0];
             a.style.color = "black"
@@ -73,7 +72,6 @@ function DropdownOption(props) {
     function colorThree(event) {
         const options = [...document.querySelectorAll(".dropdown-column.three .dropdown-option")];
         const selected = event.target.closest(".dropdown-option");
-        //console.log(selected);
 
         options.forEach((option) => {
             if (option.isSameNode(selected)) {
@@ -84,7 +82,7 @@ function DropdownOption(props) {
         })
     }
 
-    function handleDropdown(col) {
+    function handleEnter(col) {
         if (col === "1") {
             return showTwo;
         } else if (col === "2") {
@@ -96,14 +94,14 @@ function DropdownOption(props) {
     
     if (props.arrow) {
         return (
-            <div className={"dropdown-option "  + props.parent} onMouseOver={handleDropdown(props.col)}>
+            <div className={"dropdown-option "  + props.parent} onMouseEnter={handleEnter(props.col)}>
                 <Link className="dropdown-name" to={"/category/" + props.col + "/" + props.name}>{props.name}</Link>
                 <img className="dropdown-arrow" src={require("./icons/right-arrow.jpg")} alt="right arrow" />
             </div>
         );
     } else {
         return (
-            <div className="dropdown-option" onMouseOver={handleDropdown(props.col)}>
+            <div className="dropdown-option" onMouseEnter={handleEnter(props.col)}>
                 <Link className="dropdown-name" to={"/course/" + props.name}>{props.name}</Link>
             </div>
         );
