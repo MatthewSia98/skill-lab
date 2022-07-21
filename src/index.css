@@ -489,13 +489,14 @@ a.dropdown-name:hover {
 
 .rating-input {
   display: flex;
-  font-size: 20px;
+  font-size: 30px;
   justify-content: flex-start; 
   width: 20%;
   margin-left: 20px;
 }
 
 .rating-input select {
+  font-size: 30px;
   margin-left: 10px;
 }
 
@@ -838,8 +839,9 @@ a.dropdown-name:hover {
     background: #3366FF;
     border: 1px solid black;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 30px;
     width: 150px;
     padding: 10px 0px;
     margin-top: -20px;
+    color: white;
 }

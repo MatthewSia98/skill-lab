@@ -2,7 +2,13 @@ import Navbar from './Navbar';
 
 function Login(props) {
     const language = props.language;
-    function getCredential(event) {
+    function checkEmail(event) {
+        if (event.key === "Enter") {
+            login();
+        }
+    }
+
+    function checkPassword(event) {
         if (event.key === "Enter") {
             login();
         }
@@ -55,7 +61,7 @@ function Login(props) {
     const header = (language === "English" || language === "Anglais")? "Log in to your SkillLab account" : "Connectez-vous à votre compte SkillLab";
     const facebook = (language === "English" || language === "Anglais")? "Log in with Facebook" : "Se connecter avec Facebook";
     const google = (language === "English" || language === "Anglais")? "Log in with Google" : "Connectez-vous avec Google";
-    const email = (language === "English" || language === "Anglais")? "Emailr" : "E-mail";
+    const email = (language === "English" || language === "Anglais")? "Email" : "E-mail";
     const pwd = (language === "English" || language === "Anglais")? "Password" : "Mot de passe";
     const loginText = (language === "English" || language === "Anglais")? "Log In" : "Connexion";
     const noAccount = (language === "English" || language === "Anglais")? "Don't have an account? " : "Vous n'avez pas de compte ? ";
@@ -82,9 +88,9 @@ function Login(props) {
                     <p className="social-login"><a href="https://myaccount.google.com" target="_">{google}</a></p>
                 </div>
                 <p className="error" id="email-error">There is no account with this email</p>
-                <input className="login-input email" type="text" placeholder={email} onKeyPress={getCredential}></input>  
+                <input className="login-input email" type="text" placeholder={email} onKeyPress={checkEmail}></input>  
                 <p className="error" id="pwd-error">You entered a wrong password</p>
-                <input className="login-input password" type="text" placeholder={pwd} onKeyPress={getCredential}></input>
+                <input className="login-input password" type="text" placeholder={pwd} onKeyPress={checkPassword}></input>
                 <button id="login-btn" className="light-button" onClick={login}>{loginText}</button>
                 <p className="no-account">{noAccount}<button target="popup" onClick={openSignUpWindow}>{signupText}</button></p>
             </div>

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Signup(props) {
     const language = props.language;
+
     function signup(event) {
         window.opener.location.replace("/skill-lab/#/home");
         event.preventDefault();
